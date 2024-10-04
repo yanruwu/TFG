@@ -1,0 +1,32 @@
+\begin{thebibliography}{1}
+
+\bibitem{gold17283}
+Mohammad~Majid al~Rifaie, Ahmed Aber, and Remigijus Raisys.
+\newblock Swarming robots and possible medical applications.
+\newblock In {\em International Society for the Electronic Arts (ISEA 2011)}.
+  Istanbul, Turkey, 2011.
+
+\bibitem{9682800}
+Hector~Garcia de~Marina, Juan Jimenez~Castellanos, and Weijia Yao.
+\newblock Leaderless collective motions in affine formation control.
+\newblock In {\em 2021 60th IEEE Conference on Decision and Control (CDC)},
+  pages 6433--6438, 2021.
+
+\bibitem{7339680}
+Zhiyun Lin, Lili Wang, Zhiyong Chen, Minyue Fu, and Zhimin Han.
+\newblock Necessary and sufficient graphical conditions for affine formation
+  control.
+\newblock {\em IEEE Transactions on Automatic Control}, 61(10):2877--2891,
+  2016.
+
+\bibitem{GTMMN}
+Mehran Mesbahi and Magnus Egerstedt.
+\newblock {\em Graph Theoretic Methods in Multiagent Networks}.
+\newblock Princeton University Press, stu - student edition edition, 2010.
+
+\bibitem{TAN201318}
+Ying Tan and Zhong yang Zheng.
+\newblock Research advance in swarm robotics.
+\newblock {\em Defence Technology}, 9(1):18--39, 2013.
+
+\end{thebibliography}

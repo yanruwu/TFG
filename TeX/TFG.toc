@@ -1,0 +1,10 @@
+\babel@toc {spanish}{}\relax 
+\contentsline {section}{\numberline {1}Introducción}{3}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Objetivos}{3}{subsection.1.1}%
+\contentsline {section}{\numberline {2}Definición del sistema}{3}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Notación }{3}{subsection.2.1}%
+\contentsline {subsubsection}{\numberline {2.1.1}Formación nominal}{4}{subsubsection.2.1.1}%
+\contentsline {subsubsection}{\numberline {2.1.2}Obtención de pesos $\omega _{ij}$}{4}{subsubsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.2}Condición de estabilidad}{5}{subsection.2.2}%
+\contentsline {section}{\numberline {3}Parámetros de transformación}{5}{section.3}%
+\contentsline {section}{\numberline {4}Resultados}{5}{section.4}%
