@@ -1,0 +1,2249 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/apasortcite//global/global}
+    \entry{auer2016}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=263bdf8c038a048ee008ca0d31165c95}{%
+           family={Auer},
+           familyi={A\bibinitperiod},
+           given={Benjamin\bibnamedelima R.},
+           giveni={B\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4737e10726b2cefeab834d2594058b94}{%
+           family={Schuhmacher},
+           familyi={S\bibinitperiod},
+           given={Frank},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{7dfb3c6a70317956f5a0cf0cd70e0acb}
+      \strng{fullhash}{7dfb3c6a70317956f5a0cf0cd70e0acb}
+      \strng{bibnamehash}{7dfb3c6a70317956f5a0cf0cd70e0acb}
+      \strng{authorbibnamehash}{7dfb3c6a70317956f5a0cf0cd70e0acb}
+      \strng{authornamehash}{7dfb3c6a70317956f5a0cf0cd70e0acb}
+      \strng{authorfullhash}{7dfb3c6a70317956f5a0cf0cd70e0acb}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Business Research}
+      \field{number}{11}
+      \field{title}{Do Socially Responsible Investment Policies Add or Destroy European Stock Portfolio Value?}
+      \field{volume}{69}
+      \field{year}{2016}
+      \true{nocite}
+      \field{pages}{4928\bibrangedash 4938}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1016/j.jbusres.2016.04.049
+      \endverb
+    \endentry
+    \entry{banz1981}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=d215db8b33b776a6691860966c5d2815}{%
+           family={Banz},
+           familyi={B\bibinitperiod},
+           given={Rolf\bibnamedelima W.},
+           giveni={R\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{d215db8b33b776a6691860966c5d2815}
+      \strng{fullhash}{d215db8b33b776a6691860966c5d2815}
+      \strng{bibnamehash}{d215db8b33b776a6691860966c5d2815}
+      \strng{authorbibnamehash}{d215db8b33b776a6691860966c5d2815}
+      \strng{authornamehash}{d215db8b33b776a6691860966c5d2815}
+      \strng{authorfullhash}{d215db8b33b776a6691860966c5d2815}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Financial Economics}
+      \field{number}{1}
+      \field{title}{The Relationship between Return and Market Value of Common Stocks}
+      \field{volume}{9}
+      \field{year}{1981}
+      \field{pages}{3\bibrangedash 18}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.1016/0304-405X(81)90018-0
+      \endverb
+    \endentry
+    \entry{bergkolbel2022}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=f916aca97f72e0d20b10f51e8813100c}{%
+           family={Berg},
+           familyi={B\bibinitperiod},
+           given={Florian},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=db60bd070020e2a65ee596e3c54100e4}{%
+           family={Kölbel},
+           familyi={K\bibinitperiod},
+           given={Julian\bibnamedelima F.},
+           giveni={J\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5b740473a6551bdcef519ff2919ec27f}{%
+           family={Rigobon},
+           familyi={R\bibinitperiod},
+           given={Roberto},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{f4d4c1844a48905554fe7e7ce7592c76}
+      \strng{fullhash}{4e5392938664d7ddd0368c3485d37325}
+      \strng{bibnamehash}{4e5392938664d7ddd0368c3485d37325}
+      \strng{authorbibnamehash}{4e5392938664d7ddd0368c3485d37325}
+      \strng{authornamehash}{f4d4c1844a48905554fe7e7ce7592c76}
+      \strng{authorfullhash}{4e5392938664d7ddd0368c3485d37325}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Review of Finance}
+      \field{number}{6}
+      \field{title}{Aggregate Confusion: The Divergence of {ESG} Ratings}
+      \field{volume}{26}
+      \field{year}{2022}
+      \field{pages}{1315\bibrangedash 1344}
+      \range{pages}{30}
+      \verb{doi}
+      \verb 10.1093/rof/rfac033
+      \endverb
+    \endentry
+    \entry{black1972}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=93277dfc1ebe8d44428e74799781e4d7}{%
+           family={Black},
+           familyi={B\bibinitperiod},
+           given={Fischer},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=db9155adcca41b20795e0ca0bbbc007c}{%
+           family={Jensen},
+           familyi={J\bibinitperiod},
+           given={Michael\bibnamedelima C.},
+           giveni={M\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=301bb16d9f303a488dac1c73931c0eff}{%
+           family={Scholes},
+           familyi={S\bibinitperiod},
+           given={Myron},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=db9155adcca41b20795e0ca0bbbc007c}{%
+           family={Jensen},
+           familyi={J\bibinitperiod},
+           given={Michael\bibnamedelima C.},
+           giveni={M\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Praeger}%
+      }
+      \strng{namehash}{98d9337bc345dc3932ef9db0633825e1}
+      \strng{fullhash}{cc9c8cc0d3c2f894331ad64c714eb318}
+      \strng{bibnamehash}{cc9c8cc0d3c2f894331ad64c714eb318}
+      \strng{authorbibnamehash}{cc9c8cc0d3c2f894331ad64c714eb318}
+      \strng{authornamehash}{98d9337bc345dc3932ef9db0633825e1}
+      \strng{authorfullhash}{cc9c8cc0d3c2f894331ad64c714eb318}
+      \strng{editorbibnamehash}{db9155adcca41b20795e0ca0bbbc007c}
+      \strng{editornamehash}{db9155adcca41b20795e0ca0bbbc007c}
+      \strng{editorfullhash}{db9155adcca41b20795e0ca0bbbc007c}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Studies in the Theory of Capital Markets}
+      \field{title}{The Capital Asset Pricing Model: Some Empirical Tests}
+      \field{year}{1972}
+      \true{nocite}
+    \endentry
+    \entry{carhart1997}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=8a76f68a24fc2415999589b4429d26d1}{%
+           family={Carhart},
+           familyi={C\bibinitperiod},
+           given={Mark\bibnamedelima M.},
+           giveni={M\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{8a76f68a24fc2415999589b4429d26d1}
+      \strng{fullhash}{8a76f68a24fc2415999589b4429d26d1}
+      \strng{bibnamehash}{8a76f68a24fc2415999589b4429d26d1}
+      \strng{authorbibnamehash}{8a76f68a24fc2415999589b4429d26d1}
+      \strng{authornamehash}{8a76f68a24fc2415999589b4429d26d1}
+      \strng{authorfullhash}{8a76f68a24fc2415999589b4429d26d1}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Finance}
+      \field{number}{1}
+      \field{title}{On Persistence in Mutual Fund Performance}
+      \field{volume}{52}
+      \field{year}{1997}
+      \field{pages}{57\bibrangedash 82}
+      \range{pages}{26}
+      \verb{doi}
+      \verb 10.1111/j.1540-6261.1997.tb03808.x
+      \endverb
+    \endentry
+    \entry{eccles2014}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=a9d7108db41ac24b47cc9770d3ba0d8d}{%
+           family={Eccles},
+           familyi={E\bibinitperiod},
+           given={Robert\bibnamedelima G.},
+           giveni={R\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b32e8efc988fdac85c2c349fe876c25b}{%
+           family={Ioannou},
+           familyi={I\bibinitperiod},
+           given={Ioannis},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2fc28c5439cfd9b6879bdf76a2968da7}{%
+           family={Serafeim},
+           familyi={S\bibinitperiod},
+           given={George},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{61ae2f1c6a960bfb63ed1c69160277e8}
+      \strng{fullhash}{27b75211ac80f5ce71dae7d2dc64235a}
+      \strng{bibnamehash}{27b75211ac80f5ce71dae7d2dc64235a}
+      \strng{authorbibnamehash}{27b75211ac80f5ce71dae7d2dc64235a}
+      \strng{authornamehash}{61ae2f1c6a960bfb63ed1c69160277e8}
+      \strng{authorfullhash}{27b75211ac80f5ce71dae7d2dc64235a}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Management Science}
+      \field{number}{11}
+      \field{title}{The Impact of Corporate Sustainability on Organizational Processes and Performance}
+      \field{volume}{60}
+      \field{year}{2014}
+      \true{nocite}
+      \field{pages}{2835\bibrangedash 2857}
+      \range{pages}{23}
+      \verb{doi}
+      \verb 10.1287/mnsc.2014.1984
+      \endverb
+    \endentry
+    \entry{edmans2011}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=2f305382852db47747c271e625bfa8f7}{%
+           family={Edmans},
+           familyi={E\bibinitperiod},
+           given={Alex},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{2f305382852db47747c271e625bfa8f7}
+      \strng{fullhash}{2f305382852db47747c271e625bfa8f7}
+      \strng{bibnamehash}{2f305382852db47747c271e625bfa8f7}
+      \strng{authorbibnamehash}{2f305382852db47747c271e625bfa8f7}
+      \strng{authornamehash}{2f305382852db47747c271e625bfa8f7}
+      \strng{authorfullhash}{2f305382852db47747c271e625bfa8f7}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Financial Economics}
+      \field{number}{3}
+      \field{title}{Does the Stock Market Fully Value Intangibles? Employee Satisfaction and Equity Prices}
+      \field{volume}{101}
+      \field{year}{2011}
+      \true{nocite}
+      \field{pages}{621\bibrangedash 640}
+      \range{pages}{20}
+      \verb{doi}
+      \verb 10.1016/j.jfineco.2011.03.021
+      \endverb
+    \endentry
+    \entry{fama1970}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=cf1dad75742cba1f00261a0ee70e7ba2}{%
+           family={Fama},
+           familyi={F\bibinitperiod},
+           given={Eugene\bibnamedelima F.},
+           giveni={E\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{cf1dad75742cba1f00261a0ee70e7ba2}
+      \strng{fullhash}{cf1dad75742cba1f00261a0ee70e7ba2}
+      \strng{bibnamehash}{cf1dad75742cba1f00261a0ee70e7ba2}
+      \strng{authorbibnamehash}{cf1dad75742cba1f00261a0ee70e7ba2}
+      \strng{authornamehash}{cf1dad75742cba1f00261a0ee70e7ba2}
+      \strng{authorfullhash}{cf1dad75742cba1f00261a0ee70e7ba2}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Finance}
+      \field{number}{2}
+      \field{title}{Efficient Capital Markets: A Review of Theory and Empirical Work}
+      \field{volume}{25}
+      \field{year}{1970}
+      \true{nocite}
+      \field{pages}{383\bibrangedash 417}
+      \range{pages}{35}
+      \verb{doi}
+      \verb 10.2307/2325486
+      \endverb
+    \endentry
+    \entry{famafrench1992}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=cf1dad75742cba1f00261a0ee70e7ba2}{%
+           family={Fama},
+           familyi={F\bibinitperiod},
+           given={Eugene\bibnamedelima F.},
+           giveni={E\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4ca55f4db61ae3245d066a218dca72c8}{%
+           family={French},
+           familyi={F\bibinitperiod},
+           given={Kenneth\bibnamedelima R.},
+           giveni={K\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{ac5c181ffbfa45c593cd5483bcb59bd3}
+      \strng{fullhash}{ac5c181ffbfa45c593cd5483bcb59bd3}
+      \strng{bibnamehash}{ac5c181ffbfa45c593cd5483bcb59bd3}
+      \strng{authorbibnamehash}{ac5c181ffbfa45c593cd5483bcb59bd3}
+      \strng{authornamehash}{ac5c181ffbfa45c593cd5483bcb59bd3}
+      \strng{authorfullhash}{ac5c181ffbfa45c593cd5483bcb59bd3}
+      \field{extraname}{1}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Finance}
+      \field{number}{2}
+      \field{title}{The Cross-Section of Expected Stock Returns}
+      \field{volume}{47}
+      \field{year}{1992}
+      \true{nocite}
+      \field{pages}{427\bibrangedash 465}
+      \range{pages}{39}
+      \verb{doi}
+      \verb 10.1111/j.1540-6261.1992.tb04398.x
+      \endverb
+    \endentry
+    \entry{famafrench1993}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=cf1dad75742cba1f00261a0ee70e7ba2}{%
+           family={Fama},
+           familyi={F\bibinitperiod},
+           given={Eugene\bibnamedelima F.},
+           giveni={E\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4ca55f4db61ae3245d066a218dca72c8}{%
+           family={French},
+           familyi={F\bibinitperiod},
+           given={Kenneth\bibnamedelima R.},
+           giveni={K\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{ac5c181ffbfa45c593cd5483bcb59bd3}
+      \strng{fullhash}{ac5c181ffbfa45c593cd5483bcb59bd3}
+      \strng{bibnamehash}{ac5c181ffbfa45c593cd5483bcb59bd3}
+      \strng{authorbibnamehash}{ac5c181ffbfa45c593cd5483bcb59bd3}
+      \strng{authornamehash}{ac5c181ffbfa45c593cd5483bcb59bd3}
+      \strng{authorfullhash}{ac5c181ffbfa45c593cd5483bcb59bd3}
+      \field{extraname}{2}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Financial Economics}
+      \field{number}{1}
+      \field{title}{Common Risk Factors in the Returns on Stocks and Bonds}
+      \field{volume}{33}
+      \field{year}{1993}
+      \field{pages}{3\bibrangedash 56}
+      \range{pages}{54}
+      \verb{doi}
+      \verb 10.1016/0304-405X(93)90023-5
+      \endverb
+    \endentry
+    \entry{famafrench2004}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=cf1dad75742cba1f00261a0ee70e7ba2}{%
+           family={Fama},
+           familyi={F\bibinitperiod},
+           given={Eugene\bibnamedelima F.},
+           giveni={E\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4ca55f4db61ae3245d066a218dca72c8}{%
+           family={French},
+           familyi={F\bibinitperiod},
+           given={Kenneth\bibnamedelima R.},
+           giveni={K\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{ac5c181ffbfa45c593cd5483bcb59bd3}
+      \strng{fullhash}{ac5c181ffbfa45c593cd5483bcb59bd3}
+      \strng{bibnamehash}{ac5c181ffbfa45c593cd5483bcb59bd3}
+      \strng{authorbibnamehash}{ac5c181ffbfa45c593cd5483bcb59bd3}
+      \strng{authornamehash}{ac5c181ffbfa45c593cd5483bcb59bd3}
+      \strng{authorfullhash}{ac5c181ffbfa45c593cd5483bcb59bd3}
+      \field{extraname}{3}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Economic Perspectives}
+      \field{number}{3}
+      \field{title}{The Capital Asset Pricing Model: Theory and Evidence}
+      \field{volume}{18}
+      \field{year}{2004}
+      \field{pages}{25\bibrangedash 46}
+      \range{pages}{22}
+      \verb{doi}
+      \verb 10.1257/0895330042162430
+      \endverb
+    \endentry
+    \entry{famafrench2015}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=cf1dad75742cba1f00261a0ee70e7ba2}{%
+           family={Fama},
+           familyi={F\bibinitperiod},
+           given={Eugene\bibnamedelima F.},
+           giveni={E\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4ca55f4db61ae3245d066a218dca72c8}{%
+           family={French},
+           familyi={F\bibinitperiod},
+           given={Kenneth\bibnamedelima R.},
+           giveni={K\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{ac5c181ffbfa45c593cd5483bcb59bd3}
+      \strng{fullhash}{ac5c181ffbfa45c593cd5483bcb59bd3}
+      \strng{bibnamehash}{ac5c181ffbfa45c593cd5483bcb59bd3}
+      \strng{authorbibnamehash}{ac5c181ffbfa45c593cd5483bcb59bd3}
+      \strng{authornamehash}{ac5c181ffbfa45c593cd5483bcb59bd3}
+      \strng{authorfullhash}{ac5c181ffbfa45c593cd5483bcb59bd3}
+      \field{extraname}{4}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Financial Economics}
+      \field{number}{1}
+      \field{title}{A Five-Factor Asset Pricing Model}
+      \field{volume}{116}
+      \field{year}{2015}
+      \true{nocite}
+      \field{pages}{1\bibrangedash 22}
+      \range{pages}{22}
+      \verb{doi}
+      \verb 10.1016/j.jfineco.2014.10.010
+      \endverb
+    \endentry
+    \entry{friede2015}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=4786a7c3b0a7ce7a99aca83905dd08de}{%
+           family={Friede},
+           familyi={F\bibinitperiod},
+           given={Gunnar},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1ca6dee2444aca5aa7d6ffc39082a667}{%
+           family={Busch},
+           familyi={B\bibinitperiod},
+           given={Timo},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ed3e1c59bd0c76412c63aa6816220906}{%
+           family={Bassen},
+           familyi={B\bibinitperiod},
+           given={Alexander},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{31c6870f52df6096d81f2876939d5347}
+      \strng{fullhash}{bcb682e41bc9c8c1af56d688684ca2fc}
+      \strng{bibnamehash}{bcb682e41bc9c8c1af56d688684ca2fc}
+      \strng{authorbibnamehash}{bcb682e41bc9c8c1af56d688684ca2fc}
+      \strng{authornamehash}{31c6870f52df6096d81f2876939d5347}
+      \strng{authorfullhash}{bcb682e41bc9c8c1af56d688684ca2fc}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Sustainable Finance \& Investment}
+      \field{number}{4}
+      \field{title}{{ESG} and Financial Performance: Aggregated Evidence from More than 2000 Empirical Studies}
+      \field{volume}{5}
+      \field{year}{2015}
+      \field{pages}{210\bibrangedash 233}
+      \range{pages}{24}
+      \verb{doi}
+      \verb 10.1080/20430795.2015.1118917
+      \endverb
+    \endentry
+    \entry{grs1989}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=3d7baf1472964899ac8085a946422877}{%
+           family={Gibbons},
+           familyi={G\bibinitperiod},
+           given={Michael\bibnamedelima R.},
+           giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=98b2227c5a8dba76158ffb9a20138b89}{%
+           family={Ross},
+           familyi={R\bibinitperiod},
+           given={Stephen\bibnamedelima A.},
+           giveni={S\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=26c878e4a8ca57161281faee76282b91}{%
+           family={Shanken},
+           familyi={S\bibinitperiod},
+           given={Jay},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{6dbfe3d7c12ab905f824028cded032ba}
+      \strng{fullhash}{3baa591a4d627deaa40d9fa64de07e36}
+      \strng{bibnamehash}{3baa591a4d627deaa40d9fa64de07e36}
+      \strng{authorbibnamehash}{3baa591a4d627deaa40d9fa64de07e36}
+      \strng{authornamehash}{6dbfe3d7c12ab905f824028cded032ba}
+      \strng{authorfullhash}{3baa591a4d627deaa40d9fa64de07e36}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Econometrica}
+      \field{number}{5}
+      \field{title}{A Test of the Efficiency of a Given Portfolio}
+      \field{volume}{57}
+      \field{year}{1989}
+      \true{nocite}
+      \field{pages}{1121\bibrangedash 1152}
+      \range{pages}{32}
+      \verb{doi}
+      \verb 10.2307/1913625
+      \endverb
+    \endentry
+    \entry{gsia2022}{report}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=f0254a0454f562a39e47f4d8e8b63a6d}{%
+           family={{Global Sustainable Investment Alliance}},
+           familyi={G\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {GSIA}%
+      }
+      \strng{namehash}{f0254a0454f562a39e47f4d8e8b63a6d}
+      \strng{fullhash}{f0254a0454f562a39e47f4d8e8b63a6d}
+      \strng{bibnamehash}{f0254a0454f562a39e47f4d8e8b63a6d}
+      \strng{authorbibnamehash}{f0254a0454f562a39e47f4d8e8b63a6d}
+      \strng{authornamehash}{f0254a0454f562a39e47f4d8e8b63a6d}
+      \strng{authorfullhash}{f0254a0454f562a39e47f4d8e8b63a6d}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Global Sustainable Investment Review 2020}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://www.gsi-alliance.org/wp-content/uploads/2021/08/GSIR-20201.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.gsi-alliance.org/wp-content/uploads/2021/08/GSIR-20201.pdf
+      \endverb
+    \endentry
+    \entry{hong2009}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=eb100539ab5cbadb02f75621b623b5c9}{%
+           family={Hong},
+           familyi={H\bibinitperiod},
+           given={Harrison},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=db78cda5d649794562b9f3532b5d8180}{%
+           family={Kacperczyk},
+           familyi={K\bibinitperiod},
+           given={Marcin},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{cb43688185f26611b27859e056f8a93b}
+      \strng{fullhash}{cb43688185f26611b27859e056f8a93b}
+      \strng{bibnamehash}{cb43688185f26611b27859e056f8a93b}
+      \strng{authorbibnamehash}{cb43688185f26611b27859e056f8a93b}
+      \strng{authornamehash}{cb43688185f26611b27859e056f8a93b}
+      \strng{authorfullhash}{cb43688185f26611b27859e056f8a93b}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Financial Economics}
+      \field{number}{1}
+      \field{title}{The Price of Sin: The Effects of Social Norms on Markets}
+      \field{volume}{93}
+      \field{year}{2009}
+      \field{pages}{15\bibrangedash 36}
+      \range{pages}{22}
+      \verb{doi}
+      \verb 10.1016/j.jfineco.2008.09.001
+      \endverb
+    \endentry
+    \entry{jegadeesh1993}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=425b7ee57b586395fc3a1bec6511c1c8}{%
+           family={Jegadeesh},
+           familyi={J\bibinitperiod},
+           given={Narasimhan},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b04b73173bde12f6affb3df7b9d475c1}{%
+           family={Titman},
+           familyi={T\bibinitperiod},
+           given={Sheridan},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{68b842eefb0fe3530a0311863c2ed17f}
+      \strng{fullhash}{68b842eefb0fe3530a0311863c2ed17f}
+      \strng{bibnamehash}{68b842eefb0fe3530a0311863c2ed17f}
+      \strng{authorbibnamehash}{68b842eefb0fe3530a0311863c2ed17f}
+      \strng{authornamehash}{68b842eefb0fe3530a0311863c2ed17f}
+      \strng{authorfullhash}{68b842eefb0fe3530a0311863c2ed17f}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Finance}
+      \field{number}{1}
+      \field{title}{Returns to Buying Winners and Selling Losers: Implications for Stock Market Efficiency}
+      \field{volume}{48}
+      \field{year}{1993}
+      \field{pages}{65\bibrangedash 91}
+      \range{pages}{27}
+      \verb{doi}
+      \verb 10.1111/j.1540-6261.1993.tb04702.x
+      \endverb
+    \endentry
+    \entry{jensen1968}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=db9155adcca41b20795e0ca0bbbc007c}{%
+           family={Jensen},
+           familyi={J\bibinitperiod},
+           given={Michael\bibnamedelima C.},
+           giveni={M\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{db9155adcca41b20795e0ca0bbbc007c}
+      \strng{fullhash}{db9155adcca41b20795e0ca0bbbc007c}
+      \strng{bibnamehash}{db9155adcca41b20795e0ca0bbbc007c}
+      \strng{authorbibnamehash}{db9155adcca41b20795e0ca0bbbc007c}
+      \strng{authornamehash}{db9155adcca41b20795e0ca0bbbc007c}
+      \strng{authorfullhash}{db9155adcca41b20795e0ca0bbbc007c}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Finance}
+      \field{number}{2}
+      \field{title}{The Performance of Mutual Funds in the Period 1945--1964}
+      \field{volume}{23}
+      \field{year}{1968}
+      \field{pages}{389\bibrangedash 416}
+      \range{pages}{28}
+      \verb{doi}
+      \verb 10.1111/j.1540-6261.1968.tb02865.x
+      \endverb
+    \endentry
+    \entry{lintner1965}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=5abe640305d81308b73b9051f8c6e0fe}{%
+           family={Lintner},
+           familyi={L\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{5abe640305d81308b73b9051f8c6e0fe}
+      \strng{fullhash}{5abe640305d81308b73b9051f8c6e0fe}
+      \strng{bibnamehash}{5abe640305d81308b73b9051f8c6e0fe}
+      \strng{authorbibnamehash}{5abe640305d81308b73b9051f8c6e0fe}
+      \strng{authornamehash}{5abe640305d81308b73b9051f8c6e0fe}
+      \strng{authorfullhash}{5abe640305d81308b73b9051f8c6e0fe}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Review of Economics and Statistics}
+      \field{number}{1}
+      \field{title}{The Valuation of Risk Assets and the Selection of Risky Investments in Stock Portfolios and Capital Budgets}
+      \field{volume}{47}
+      \field{year}{1965}
+      \field{pages}{13\bibrangedash 37}
+      \range{pages}{25}
+      \verb{doi}
+      \verb 10.2307/1924119
+      \endverb
+    \endentry
+    \entry{lioui2022}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=8e8cb91a7129dc547f7c4ac9b0642e21}{%
+           family={Lioui},
+           familyi={L\bibinitperiod},
+           given={Abraham},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a81b69dcf53d117b6149b72b9430753a}{%
+           family={Tarelli},
+           familyi={T\bibinitperiod},
+           given={Andrea},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{51cebb92c3f9030d4cb786f8ac04342e}
+      \strng{fullhash}{51cebb92c3f9030d4cb786f8ac04342e}
+      \strng{bibnamehash}{51cebb92c3f9030d4cb786f8ac04342e}
+      \strng{authorbibnamehash}{51cebb92c3f9030d4cb786f8ac04342e}
+      \strng{authornamehash}{51cebb92c3f9030d4cb786f8ac04342e}
+      \strng{authorfullhash}{51cebb92c3f9030d4cb786f8ac04342e}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Banking \& Finance}
+      \field{title}{Chasing the {ESG} Factor}
+      \field{volume}{139}
+      \field{year}{2022}
+      \field{pages}{106498}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.jbankfin.2022.106498
+      \endverb
+    \endentry
+    \entry{markowitz1952}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=bdfa1c8585b5a4ae901315043a00f2f2}{%
+           family={Markowitz},
+           familyi={M\bibinitperiod},
+           given={Harry},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{bdfa1c8585b5a4ae901315043a00f2f2}
+      \strng{fullhash}{bdfa1c8585b5a4ae901315043a00f2f2}
+      \strng{bibnamehash}{bdfa1c8585b5a4ae901315043a00f2f2}
+      \strng{authorbibnamehash}{bdfa1c8585b5a4ae901315043a00f2f2}
+      \strng{authornamehash}{bdfa1c8585b5a4ae901315043a00f2f2}
+      \strng{authorfullhash}{bdfa1c8585b5a4ae901315043a00f2f2}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Finance}
+      \field{number}{1}
+      \field{title}{Portfolio Selection}
+      \field{volume}{7}
+      \field{year}{1952}
+      \field{pages}{77\bibrangedash 91}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1111/j.1540-6261.1952.tb01525.x
+      \endverb
+    \endentry
+    \entry{mossin1966}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=c62853668bdb2e78376578bdeb97ab6d}{%
+           family={Mossin},
+           familyi={M\bibinitperiod},
+           given={Jan},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{c62853668bdb2e78376578bdeb97ab6d}
+      \strng{fullhash}{c62853668bdb2e78376578bdeb97ab6d}
+      \strng{bibnamehash}{c62853668bdb2e78376578bdeb97ab6d}
+      \strng{authorbibnamehash}{c62853668bdb2e78376578bdeb97ab6d}
+      \strng{authornamehash}{c62853668bdb2e78376578bdeb97ab6d}
+      \strng{authorfullhash}{c62853668bdb2e78376578bdeb97ab6d}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Econometrica}
+      \field{number}{4}
+      \field{title}{Equilibrium in a Capital Asset Market}
+      \field{volume}{34}
+      \field{year}{1966}
+      \field{pages}{768\bibrangedash 783}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.2307/1910098
+      \endverb
+    \endentry
+    \entry{nagy2016}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=7b7bb11109fe8e22620870c1693f4d3b}{%
+           family={Nagy},
+           familyi={N\bibinitperiod},
+           given={Zoltán},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a346c60568c119c1fc8ca22096b95925}{%
+           family={Kassam},
+           familyi={K\bibinitperiod},
+           given={Altaf},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=48e66b749b8979c17ec9cb9f8b65bc57}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={Linda-Eling},
+           giveni={L\bibinithyphendelim E\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{f935a9d236fdeb9e9d33ee91b20b4dcc}
+      \strng{fullhash}{372335722318b9138d3fe326d17d0b1f}
+      \strng{bibnamehash}{372335722318b9138d3fe326d17d0b1f}
+      \strng{authorbibnamehash}{372335722318b9138d3fe326d17d0b1f}
+      \strng{authornamehash}{f935a9d236fdeb9e9d33ee91b20b4dcc}
+      \strng{authorfullhash}{372335722318b9138d3fe326d17d0b1f}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Investing}
+      \field{number}{2}
+      \field{title}{Can {ESG} Add Alpha? An Analysis of {ESG} Tilt and Momentum Strategies}
+      \field{volume}{25}
+      \field{year}{2016}
+      \true{nocite}
+      \field{pages}{113\bibrangedash 124}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.3905/joi.2016.25.2.113
+      \endverb
+    \endentry
+    \entry{pastor2021}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=1be825d7175b7af626c78cd8d18cb165}{%
+           family={Pástor},
+           familyi={P\bibinitperiod},
+           given={Ľuboš},
+           giveni={Ľ\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1395517a8354900f86286e02adb6299d}{%
+           family={Stambaugh},
+           familyi={S\bibinitperiod},
+           given={Robert\bibnamedelima F.},
+           giveni={R\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d190a7a6e74cebaa68a72b0d502cb7b6}{%
+           family={Taylor},
+           familyi={T\bibinitperiod},
+           given={Lucian\bibnamedelima A.},
+           giveni={L\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{2cd883c3eb5c9c64e4d169a164b99440}
+      \strng{fullhash}{202d1a65e5ef8f9156c96370227f0398}
+      \strng{bibnamehash}{202d1a65e5ef8f9156c96370227f0398}
+      \strng{authorbibnamehash}{202d1a65e5ef8f9156c96370227f0398}
+      \strng{authornamehash}{2cd883c3eb5c9c64e4d169a164b99440}
+      \strng{authorfullhash}{202d1a65e5ef8f9156c96370227f0398}
+      \field{extraname}{1}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Financial Economics}
+      \field{number}{2}
+      \field{title}{Sustainable Investing in Equilibrium}
+      \field{volume}{142}
+      \field{year}{2021}
+      \field{pages}{550\bibrangedash 571}
+      \range{pages}{22}
+      \verb{doi}
+      \verb 10.1016/j.jfineco.2020.12.011
+      \endverb
+    \endentry
+    \entry{pastor2022}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=1be825d7175b7af626c78cd8d18cb165}{%
+           family={Pástor},
+           familyi={P\bibinitperiod},
+           given={Ľuboš},
+           giveni={Ľ\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1395517a8354900f86286e02adb6299d}{%
+           family={Stambaugh},
+           familyi={S\bibinitperiod},
+           given={Robert\bibnamedelima F.},
+           giveni={R\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d190a7a6e74cebaa68a72b0d502cb7b6}{%
+           family={Taylor},
+           familyi={T\bibinitperiod},
+           given={Lucian\bibnamedelima A.},
+           giveni={L\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{2cd883c3eb5c9c64e4d169a164b99440}
+      \strng{fullhash}{202d1a65e5ef8f9156c96370227f0398}
+      \strng{bibnamehash}{202d1a65e5ef8f9156c96370227f0398}
+      \strng{authorbibnamehash}{202d1a65e5ef8f9156c96370227f0398}
+      \strng{authornamehash}{2cd883c3eb5c9c64e4d169a164b99440}
+      \strng{authorfullhash}{202d1a65e5ef8f9156c96370227f0398}
+      \field{extraname}{2}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Financial Economics}
+      \field{number}{2}
+      \field{title}{Dissecting Green Returns}
+      \field{volume}{146}
+      \field{year}{2022}
+      \field{pages}{403\bibrangedash 424}
+      \range{pages}{22}
+      \verb{doi}
+      \verb 10.1016/j.jfineco.2022.07.007
+      \endverb
+    \endentry
+    \entry{pedersen2021}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=07123ce41f03a63251aed38e35aa6029}{%
+           family={Pedersen},
+           familyi={P\bibinitperiod},
+           given={Lasse\bibnamedelima Heje},
+           giveni={L\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=be13fef765869cf7cede94b7f2e3a0b3}{%
+           family={Fitzgibbons},
+           familyi={F\bibinitperiod},
+           given={Shaun},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d3e6e49816dda8282982cab8348aa051}{%
+           family={Pomorski},
+           familyi={P\bibinitperiod},
+           given={Lukasz},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{ed60265874c5d8301308c436c77ffb81}
+      \strng{fullhash}{1eae3c4cc3997ca46ae05f70e20c73fd}
+      \strng{bibnamehash}{1eae3c4cc3997ca46ae05f70e20c73fd}
+      \strng{authorbibnamehash}{1eae3c4cc3997ca46ae05f70e20c73fd}
+      \strng{authornamehash}{ed60265874c5d8301308c436c77ffb81}
+      \strng{authorfullhash}{1eae3c4cc3997ca46ae05f70e20c73fd}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Financial Economics}
+      \field{number}{2}
+      \field{title}{{Responsible Investing: The ESG-Efficient Frontier}}
+      \field{volume}{142}
+      \field{year}{2021}
+      \field{pages}{572\bibrangedash 597}
+      \range{pages}{26}
+      \verb{doi}
+      \verb 10.1016/j.jfineco.2020.11.001
+      \endverb
+    \endentry
+    \entry{rosenberg1985}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=c00b40889aa52907867f6cc2221bf6ba}{%
+           family={Rosenberg},
+           familyi={R\bibinitperiod},
+           given={Barr},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=767ae58bb45341caf8605e4fbd01469a}{%
+           family={Reid},
+           familyi={R\bibinitperiod},
+           given={Kenneth},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7eba398dac7557a695cbb7b4b1025726}{%
+           family={Lanstein},
+           familyi={L\bibinitperiod},
+           given={Ronald},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{54a26ac00b81cdfc5e84a6f9b89d2089}
+      \strng{fullhash}{ae50f8af62bcfe6dfab3944aaee1d0d5}
+      \strng{bibnamehash}{ae50f8af62bcfe6dfab3944aaee1d0d5}
+      \strng{authorbibnamehash}{ae50f8af62bcfe6dfab3944aaee1d0d5}
+      \strng{authornamehash}{54a26ac00b81cdfc5e84a6f9b89d2089}
+      \strng{authorfullhash}{ae50f8af62bcfe6dfab3944aaee1d0d5}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Portfolio Management}
+      \field{number}{3}
+      \field{title}{Persuasive Evidence of Market Inefficiency}
+      \field{volume}{11}
+      \field{year}{1985}
+      \true{nocite}
+      \field{pages}{9\bibrangedash 16}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.3905/jpm.1985.409007
+      \endverb
+    \endentry
+    \entry{sharpe1964}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=7713eaeb6845785b0f6bb5cffab120d1}{%
+           family={Sharpe},
+           familyi={S\bibinitperiod},
+           given={William\bibnamedelima F.},
+           giveni={W\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{7713eaeb6845785b0f6bb5cffab120d1}
+      \strng{fullhash}{7713eaeb6845785b0f6bb5cffab120d1}
+      \strng{bibnamehash}{7713eaeb6845785b0f6bb5cffab120d1}
+      \strng{authorbibnamehash}{7713eaeb6845785b0f6bb5cffab120d1}
+      \strng{authornamehash}{7713eaeb6845785b0f6bb5cffab120d1}
+      \strng{authorfullhash}{7713eaeb6845785b0f6bb5cffab120d1}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Finance}
+      \field{number}{3}
+      \field{title}{Capital Asset Prices: A Theory of Market Equilibrium under Conditions of Risk}
+      \field{volume}{19}
+      \field{year}{1964}
+      \field{pages}{425\bibrangedash 442}
+      \range{pages}{18}
+      \verb{doi}
+      \verb 10.1111/j.1540-6261.1964.tb02865.x
+      \endverb
+    \endentry
+  \enddatalist
+  \datalist[entry]{nyt/global//global/global}
+    \entry{auer2016}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=263bdf8c038a048ee008ca0d31165c95}{%
+           family={Auer},
+           familyi={A\bibinitperiod},
+           given={Benjamin\bibnamedelima R.},
+           giveni={B\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4737e10726b2cefeab834d2594058b94}{%
+           family={Schuhmacher},
+           familyi={S\bibinitperiod},
+           given={Frank},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{7dfb3c6a70317956f5a0cf0cd70e0acb}
+      \strng{fullhash}{7dfb3c6a70317956f5a0cf0cd70e0acb}
+      \strng{bibnamehash}{7dfb3c6a70317956f5a0cf0cd70e0acb}
+      \strng{authorbibnamehash}{7dfb3c6a70317956f5a0cf0cd70e0acb}
+      \strng{authornamehash}{7dfb3c6a70317956f5a0cf0cd70e0acb}
+      \strng{authorfullhash}{7dfb3c6a70317956f5a0cf0cd70e0acb}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Business Research}
+      \field{number}{11}
+      \field{title}{Do Socially Responsible Investment Policies Add or Destroy European Stock Portfolio Value?}
+      \field{volume}{69}
+      \field{year}{2016}
+      \true{nocite}
+      \field{pages}{4928\bibrangedash 4938}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1016/j.jbusres.2016.04.049
+      \endverb
+    \endentry
+    \entry{banz1981}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=d215db8b33b776a6691860966c5d2815}{%
+           family={Banz},
+           familyi={B\bibinitperiod},
+           given={Rolf\bibnamedelima W.},
+           giveni={R\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{d215db8b33b776a6691860966c5d2815}
+      \strng{fullhash}{d215db8b33b776a6691860966c5d2815}
+      \strng{bibnamehash}{d215db8b33b776a6691860966c5d2815}
+      \strng{authorbibnamehash}{d215db8b33b776a6691860966c5d2815}
+      \strng{authornamehash}{d215db8b33b776a6691860966c5d2815}
+      \strng{authorfullhash}{d215db8b33b776a6691860966c5d2815}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Financial Economics}
+      \field{number}{1}
+      \field{title}{The Relationship between Return and Market Value of Common Stocks}
+      \field{volume}{9}
+      \field{year}{1981}
+      \field{pages}{3\bibrangedash 18}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.1016/0304-405X(81)90018-0
+      \endverb
+    \endentry
+    \entry{bergkolbel2022}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=f916aca97f72e0d20b10f51e8813100c}{%
+           family={Berg},
+           familyi={B\bibinitperiod},
+           given={Florian},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=db60bd070020e2a65ee596e3c54100e4}{%
+           family={Kölbel},
+           familyi={K\bibinitperiod},
+           given={Julian\bibnamedelima F.},
+           giveni={J\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5b740473a6551bdcef519ff2919ec27f}{%
+           family={Rigobon},
+           familyi={R\bibinitperiod},
+           given={Roberto},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{f4d4c1844a48905554fe7e7ce7592c76}
+      \strng{fullhash}{4e5392938664d7ddd0368c3485d37325}
+      \strng{bibnamehash}{4e5392938664d7ddd0368c3485d37325}
+      \strng{authorbibnamehash}{4e5392938664d7ddd0368c3485d37325}
+      \strng{authornamehash}{f4d4c1844a48905554fe7e7ce7592c76}
+      \strng{authorfullhash}{4e5392938664d7ddd0368c3485d37325}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Review of Finance}
+      \field{number}{6}
+      \field{title}{Aggregate Confusion: The Divergence of {ESG} Ratings}
+      \field{volume}{26}
+      \field{year}{2022}
+      \field{pages}{1315\bibrangedash 1344}
+      \range{pages}{30}
+      \verb{doi}
+      \verb 10.1093/rof/rfac033
+      \endverb
+    \endentry
+    \entry{black1972}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=93277dfc1ebe8d44428e74799781e4d7}{%
+           family={Black},
+           familyi={B\bibinitperiod},
+           given={Fischer},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=db9155adcca41b20795e0ca0bbbc007c}{%
+           family={Jensen},
+           familyi={J\bibinitperiod},
+           given={Michael\bibnamedelima C.},
+           giveni={M\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=301bb16d9f303a488dac1c73931c0eff}{%
+           family={Scholes},
+           familyi={S\bibinitperiod},
+           given={Myron},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=db9155adcca41b20795e0ca0bbbc007c}{%
+           family={Jensen},
+           familyi={J\bibinitperiod},
+           given={Michael\bibnamedelima C.},
+           giveni={M\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Praeger}%
+      }
+      \strng{namehash}{98d9337bc345dc3932ef9db0633825e1}
+      \strng{fullhash}{cc9c8cc0d3c2f894331ad64c714eb318}
+      \strng{bibnamehash}{cc9c8cc0d3c2f894331ad64c714eb318}
+      \strng{authorbibnamehash}{cc9c8cc0d3c2f894331ad64c714eb318}
+      \strng{authornamehash}{98d9337bc345dc3932ef9db0633825e1}
+      \strng{authorfullhash}{cc9c8cc0d3c2f894331ad64c714eb318}
+      \strng{editorbibnamehash}{db9155adcca41b20795e0ca0bbbc007c}
+      \strng{editornamehash}{db9155adcca41b20795e0ca0bbbc007c}
+      \strng{editorfullhash}{db9155adcca41b20795e0ca0bbbc007c}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Studies in the Theory of Capital Markets}
+      \field{title}{The Capital Asset Pricing Model: Some Empirical Tests}
+      \field{year}{1972}
+      \true{nocite}
+    \endentry
+    \entry{carhart1997}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=8a76f68a24fc2415999589b4429d26d1}{%
+           family={Carhart},
+           familyi={C\bibinitperiod},
+           given={Mark\bibnamedelima M.},
+           giveni={M\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{8a76f68a24fc2415999589b4429d26d1}
+      \strng{fullhash}{8a76f68a24fc2415999589b4429d26d1}
+      \strng{bibnamehash}{8a76f68a24fc2415999589b4429d26d1}
+      \strng{authorbibnamehash}{8a76f68a24fc2415999589b4429d26d1}
+      \strng{authornamehash}{8a76f68a24fc2415999589b4429d26d1}
+      \strng{authorfullhash}{8a76f68a24fc2415999589b4429d26d1}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Finance}
+      \field{number}{1}
+      \field{title}{On Persistence in Mutual Fund Performance}
+      \field{volume}{52}
+      \field{year}{1997}
+      \field{pages}{57\bibrangedash 82}
+      \range{pages}{26}
+      \verb{doi}
+      \verb 10.1111/j.1540-6261.1997.tb03808.x
+      \endverb
+    \endentry
+    \entry{eccles2014}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=a9d7108db41ac24b47cc9770d3ba0d8d}{%
+           family={Eccles},
+           familyi={E\bibinitperiod},
+           given={Robert\bibnamedelima G.},
+           giveni={R\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b32e8efc988fdac85c2c349fe876c25b}{%
+           family={Ioannou},
+           familyi={I\bibinitperiod},
+           given={Ioannis},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2fc28c5439cfd9b6879bdf76a2968da7}{%
+           family={Serafeim},
+           familyi={S\bibinitperiod},
+           given={George},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{61ae2f1c6a960bfb63ed1c69160277e8}
+      \strng{fullhash}{27b75211ac80f5ce71dae7d2dc64235a}
+      \strng{bibnamehash}{27b75211ac80f5ce71dae7d2dc64235a}
+      \strng{authorbibnamehash}{27b75211ac80f5ce71dae7d2dc64235a}
+      \strng{authornamehash}{61ae2f1c6a960bfb63ed1c69160277e8}
+      \strng{authorfullhash}{27b75211ac80f5ce71dae7d2dc64235a}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Management Science}
+      \field{number}{11}
+      \field{title}{The Impact of Corporate Sustainability on Organizational Processes and Performance}
+      \field{volume}{60}
+      \field{year}{2014}
+      \true{nocite}
+      \field{pages}{2835\bibrangedash 2857}
+      \range{pages}{23}
+      \verb{doi}
+      \verb 10.1287/mnsc.2014.1984
+      \endverb
+    \endentry
+    \entry{edmans2011}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=2f305382852db47747c271e625bfa8f7}{%
+           family={Edmans},
+           familyi={E\bibinitperiod},
+           given={Alex},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{2f305382852db47747c271e625bfa8f7}
+      \strng{fullhash}{2f305382852db47747c271e625bfa8f7}
+      \strng{bibnamehash}{2f305382852db47747c271e625bfa8f7}
+      \strng{authorbibnamehash}{2f305382852db47747c271e625bfa8f7}
+      \strng{authornamehash}{2f305382852db47747c271e625bfa8f7}
+      \strng{authorfullhash}{2f305382852db47747c271e625bfa8f7}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Financial Economics}
+      \field{number}{3}
+      \field{title}{Does the Stock Market Fully Value Intangibles? Employee Satisfaction and Equity Prices}
+      \field{volume}{101}
+      \field{year}{2011}
+      \true{nocite}
+      \field{pages}{621\bibrangedash 640}
+      \range{pages}{20}
+      \verb{doi}
+      \verb 10.1016/j.jfineco.2011.03.021
+      \endverb
+    \endentry
+    \entry{fama1970}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=cf1dad75742cba1f00261a0ee70e7ba2}{%
+           family={Fama},
+           familyi={F\bibinitperiod},
+           given={Eugene\bibnamedelima F.},
+           giveni={E\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{cf1dad75742cba1f00261a0ee70e7ba2}
+      \strng{fullhash}{cf1dad75742cba1f00261a0ee70e7ba2}
+      \strng{bibnamehash}{cf1dad75742cba1f00261a0ee70e7ba2}
+      \strng{authorbibnamehash}{cf1dad75742cba1f00261a0ee70e7ba2}
+      \strng{authornamehash}{cf1dad75742cba1f00261a0ee70e7ba2}
+      \strng{authorfullhash}{cf1dad75742cba1f00261a0ee70e7ba2}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Finance}
+      \field{number}{2}
+      \field{title}{Efficient Capital Markets: A Review of Theory and Empirical Work}
+      \field{volume}{25}
+      \field{year}{1970}
+      \true{nocite}
+      \field{pages}{383\bibrangedash 417}
+      \range{pages}{35}
+      \verb{doi}
+      \verb 10.2307/2325486
+      \endverb
+    \endentry
+    \entry{famafrench1992}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=cf1dad75742cba1f00261a0ee70e7ba2}{%
+           family={Fama},
+           familyi={F\bibinitperiod},
+           given={Eugene\bibnamedelima F.},
+           giveni={E\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4ca55f4db61ae3245d066a218dca72c8}{%
+           family={French},
+           familyi={F\bibinitperiod},
+           given={Kenneth\bibnamedelima R.},
+           giveni={K\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{ac5c181ffbfa45c593cd5483bcb59bd3}
+      \strng{fullhash}{ac5c181ffbfa45c593cd5483bcb59bd3}
+      \strng{bibnamehash}{ac5c181ffbfa45c593cd5483bcb59bd3}
+      \strng{authorbibnamehash}{ac5c181ffbfa45c593cd5483bcb59bd3}
+      \strng{authornamehash}{ac5c181ffbfa45c593cd5483bcb59bd3}
+      \strng{authorfullhash}{ac5c181ffbfa45c593cd5483bcb59bd3}
+      \field{extraname}{1}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Finance}
+      \field{number}{2}
+      \field{title}{The Cross-Section of Expected Stock Returns}
+      \field{volume}{47}
+      \field{year}{1992}
+      \true{nocite}
+      \field{pages}{427\bibrangedash 465}
+      \range{pages}{39}
+      \verb{doi}
+      \verb 10.1111/j.1540-6261.1992.tb04398.x
+      \endverb
+    \endentry
+    \entry{famafrench1993}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=cf1dad75742cba1f00261a0ee70e7ba2}{%
+           family={Fama},
+           familyi={F\bibinitperiod},
+           given={Eugene\bibnamedelima F.},
+           giveni={E\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4ca55f4db61ae3245d066a218dca72c8}{%
+           family={French},
+           familyi={F\bibinitperiod},
+           given={Kenneth\bibnamedelima R.},
+           giveni={K\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{ac5c181ffbfa45c593cd5483bcb59bd3}
+      \strng{fullhash}{ac5c181ffbfa45c593cd5483bcb59bd3}
+      \strng{bibnamehash}{ac5c181ffbfa45c593cd5483bcb59bd3}
+      \strng{authorbibnamehash}{ac5c181ffbfa45c593cd5483bcb59bd3}
+      \strng{authornamehash}{ac5c181ffbfa45c593cd5483bcb59bd3}
+      \strng{authorfullhash}{ac5c181ffbfa45c593cd5483bcb59bd3}
+      \field{extraname}{2}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Financial Economics}
+      \field{number}{1}
+      \field{title}{Common Risk Factors in the Returns on Stocks and Bonds}
+      \field{volume}{33}
+      \field{year}{1993}
+      \field{pages}{3\bibrangedash 56}
+      \range{pages}{54}
+      \verb{doi}
+      \verb 10.1016/0304-405X(93)90023-5
+      \endverb
+    \endentry
+    \entry{famafrench2004}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=cf1dad75742cba1f00261a0ee70e7ba2}{%
+           family={Fama},
+           familyi={F\bibinitperiod},
+           given={Eugene\bibnamedelima F.},
+           giveni={E\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4ca55f4db61ae3245d066a218dca72c8}{%
+           family={French},
+           familyi={F\bibinitperiod},
+           given={Kenneth\bibnamedelima R.},
+           giveni={K\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{ac5c181ffbfa45c593cd5483bcb59bd3}
+      \strng{fullhash}{ac5c181ffbfa45c593cd5483bcb59bd3}
+      \strng{bibnamehash}{ac5c181ffbfa45c593cd5483bcb59bd3}
+      \strng{authorbibnamehash}{ac5c181ffbfa45c593cd5483bcb59bd3}
+      \strng{authornamehash}{ac5c181ffbfa45c593cd5483bcb59bd3}
+      \strng{authorfullhash}{ac5c181ffbfa45c593cd5483bcb59bd3}
+      \field{extraname}{3}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Economic Perspectives}
+      \field{number}{3}
+      \field{title}{The Capital Asset Pricing Model: Theory and Evidence}
+      \field{volume}{18}
+      \field{year}{2004}
+      \field{pages}{25\bibrangedash 46}
+      \range{pages}{22}
+      \verb{doi}
+      \verb 10.1257/0895330042162430
+      \endverb
+    \endentry
+    \entry{famafrench2015}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=cf1dad75742cba1f00261a0ee70e7ba2}{%
+           family={Fama},
+           familyi={F\bibinitperiod},
+           given={Eugene\bibnamedelima F.},
+           giveni={E\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4ca55f4db61ae3245d066a218dca72c8}{%
+           family={French},
+           familyi={F\bibinitperiod},
+           given={Kenneth\bibnamedelima R.},
+           giveni={K\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{ac5c181ffbfa45c593cd5483bcb59bd3}
+      \strng{fullhash}{ac5c181ffbfa45c593cd5483bcb59bd3}
+      \strng{bibnamehash}{ac5c181ffbfa45c593cd5483bcb59bd3}
+      \strng{authorbibnamehash}{ac5c181ffbfa45c593cd5483bcb59bd3}
+      \strng{authornamehash}{ac5c181ffbfa45c593cd5483bcb59bd3}
+      \strng{authorfullhash}{ac5c181ffbfa45c593cd5483bcb59bd3}
+      \field{extraname}{4}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Financial Economics}
+      \field{number}{1}
+      \field{title}{A Five-Factor Asset Pricing Model}
+      \field{volume}{116}
+      \field{year}{2015}
+      \true{nocite}
+      \field{pages}{1\bibrangedash 22}
+      \range{pages}{22}
+      \verb{doi}
+      \verb 10.1016/j.jfineco.2014.10.010
+      \endverb
+    \endentry
+    \entry{friede2015}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=4786a7c3b0a7ce7a99aca83905dd08de}{%
+           family={Friede},
+           familyi={F\bibinitperiod},
+           given={Gunnar},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1ca6dee2444aca5aa7d6ffc39082a667}{%
+           family={Busch},
+           familyi={B\bibinitperiod},
+           given={Timo},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ed3e1c59bd0c76412c63aa6816220906}{%
+           family={Bassen},
+           familyi={B\bibinitperiod},
+           given={Alexander},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{31c6870f52df6096d81f2876939d5347}
+      \strng{fullhash}{bcb682e41bc9c8c1af56d688684ca2fc}
+      \strng{bibnamehash}{bcb682e41bc9c8c1af56d688684ca2fc}
+      \strng{authorbibnamehash}{bcb682e41bc9c8c1af56d688684ca2fc}
+      \strng{authornamehash}{31c6870f52df6096d81f2876939d5347}
+      \strng{authorfullhash}{bcb682e41bc9c8c1af56d688684ca2fc}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Sustainable Finance \& Investment}
+      \field{number}{4}
+      \field{title}{{ESG} and Financial Performance: Aggregated Evidence from More than 2000 Empirical Studies}
+      \field{volume}{5}
+      \field{year}{2015}
+      \field{pages}{210\bibrangedash 233}
+      \range{pages}{24}
+      \verb{doi}
+      \verb 10.1080/20430795.2015.1118917
+      \endverb
+    \endentry
+    \entry{grs1989}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=3d7baf1472964899ac8085a946422877}{%
+           family={Gibbons},
+           familyi={G\bibinitperiod},
+           given={Michael\bibnamedelima R.},
+           giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=98b2227c5a8dba76158ffb9a20138b89}{%
+           family={Ross},
+           familyi={R\bibinitperiod},
+           given={Stephen\bibnamedelima A.},
+           giveni={S\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=26c878e4a8ca57161281faee76282b91}{%
+           family={Shanken},
+           familyi={S\bibinitperiod},
+           given={Jay},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{6dbfe3d7c12ab905f824028cded032ba}
+      \strng{fullhash}{3baa591a4d627deaa40d9fa64de07e36}
+      \strng{bibnamehash}{3baa591a4d627deaa40d9fa64de07e36}
+      \strng{authorbibnamehash}{3baa591a4d627deaa40d9fa64de07e36}
+      \strng{authornamehash}{6dbfe3d7c12ab905f824028cded032ba}
+      \strng{authorfullhash}{3baa591a4d627deaa40d9fa64de07e36}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Econometrica}
+      \field{number}{5}
+      \field{title}{A Test of the Efficiency of a Given Portfolio}
+      \field{volume}{57}
+      \field{year}{1989}
+      \true{nocite}
+      \field{pages}{1121\bibrangedash 1152}
+      \range{pages}{32}
+      \verb{doi}
+      \verb 10.2307/1913625
+      \endverb
+    \endentry
+    \entry{gsia2022}{report}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=f0254a0454f562a39e47f4d8e8b63a6d}{%
+           family={{Global Sustainable Investment Alliance}},
+           familyi={G\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {GSIA}%
+      }
+      \strng{namehash}{f0254a0454f562a39e47f4d8e8b63a6d}
+      \strng{fullhash}{f0254a0454f562a39e47f4d8e8b63a6d}
+      \strng{bibnamehash}{f0254a0454f562a39e47f4d8e8b63a6d}
+      \strng{authorbibnamehash}{f0254a0454f562a39e47f4d8e8b63a6d}
+      \strng{authornamehash}{f0254a0454f562a39e47f4d8e8b63a6d}
+      \strng{authorfullhash}{f0254a0454f562a39e47f4d8e8b63a6d}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Global Sustainable Investment Review 2020}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://www.gsi-alliance.org/wp-content/uploads/2021/08/GSIR-20201.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.gsi-alliance.org/wp-content/uploads/2021/08/GSIR-20201.pdf
+      \endverb
+    \endentry
+    \entry{hong2009}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=eb100539ab5cbadb02f75621b623b5c9}{%
+           family={Hong},
+           familyi={H\bibinitperiod},
+           given={Harrison},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=db78cda5d649794562b9f3532b5d8180}{%
+           family={Kacperczyk},
+           familyi={K\bibinitperiod},
+           given={Marcin},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{cb43688185f26611b27859e056f8a93b}
+      \strng{fullhash}{cb43688185f26611b27859e056f8a93b}
+      \strng{bibnamehash}{cb43688185f26611b27859e056f8a93b}
+      \strng{authorbibnamehash}{cb43688185f26611b27859e056f8a93b}
+      \strng{authornamehash}{cb43688185f26611b27859e056f8a93b}
+      \strng{authorfullhash}{cb43688185f26611b27859e056f8a93b}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Financial Economics}
+      \field{number}{1}
+      \field{title}{The Price of Sin: The Effects of Social Norms on Markets}
+      \field{volume}{93}
+      \field{year}{2009}
+      \field{pages}{15\bibrangedash 36}
+      \range{pages}{22}
+      \verb{doi}
+      \verb 10.1016/j.jfineco.2008.09.001
+      \endverb
+    \endentry
+    \entry{jegadeesh1993}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=425b7ee57b586395fc3a1bec6511c1c8}{%
+           family={Jegadeesh},
+           familyi={J\bibinitperiod},
+           given={Narasimhan},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b04b73173bde12f6affb3df7b9d475c1}{%
+           family={Titman},
+           familyi={T\bibinitperiod},
+           given={Sheridan},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{68b842eefb0fe3530a0311863c2ed17f}
+      \strng{fullhash}{68b842eefb0fe3530a0311863c2ed17f}
+      \strng{bibnamehash}{68b842eefb0fe3530a0311863c2ed17f}
+      \strng{authorbibnamehash}{68b842eefb0fe3530a0311863c2ed17f}
+      \strng{authornamehash}{68b842eefb0fe3530a0311863c2ed17f}
+      \strng{authorfullhash}{68b842eefb0fe3530a0311863c2ed17f}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Finance}
+      \field{number}{1}
+      \field{title}{Returns to Buying Winners and Selling Losers: Implications for Stock Market Efficiency}
+      \field{volume}{48}
+      \field{year}{1993}
+      \field{pages}{65\bibrangedash 91}
+      \range{pages}{27}
+      \verb{doi}
+      \verb 10.1111/j.1540-6261.1993.tb04702.x
+      \endverb
+    \endentry
+    \entry{jensen1968}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=db9155adcca41b20795e0ca0bbbc007c}{%
+           family={Jensen},
+           familyi={J\bibinitperiod},
+           given={Michael\bibnamedelima C.},
+           giveni={M\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{db9155adcca41b20795e0ca0bbbc007c}
+      \strng{fullhash}{db9155adcca41b20795e0ca0bbbc007c}
+      \strng{bibnamehash}{db9155adcca41b20795e0ca0bbbc007c}
+      \strng{authorbibnamehash}{db9155adcca41b20795e0ca0bbbc007c}
+      \strng{authornamehash}{db9155adcca41b20795e0ca0bbbc007c}
+      \strng{authorfullhash}{db9155adcca41b20795e0ca0bbbc007c}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Finance}
+      \field{number}{2}
+      \field{title}{The Performance of Mutual Funds in the Period 1945--1964}
+      \field{volume}{23}
+      \field{year}{1968}
+      \field{pages}{389\bibrangedash 416}
+      \range{pages}{28}
+      \verb{doi}
+      \verb 10.1111/j.1540-6261.1968.tb02865.x
+      \endverb
+    \endentry
+    \entry{lintner1965}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=5abe640305d81308b73b9051f8c6e0fe}{%
+           family={Lintner},
+           familyi={L\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{5abe640305d81308b73b9051f8c6e0fe}
+      \strng{fullhash}{5abe640305d81308b73b9051f8c6e0fe}
+      \strng{bibnamehash}{5abe640305d81308b73b9051f8c6e0fe}
+      \strng{authorbibnamehash}{5abe640305d81308b73b9051f8c6e0fe}
+      \strng{authornamehash}{5abe640305d81308b73b9051f8c6e0fe}
+      \strng{authorfullhash}{5abe640305d81308b73b9051f8c6e0fe}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Review of Economics and Statistics}
+      \field{number}{1}
+      \field{title}{The Valuation of Risk Assets and the Selection of Risky Investments in Stock Portfolios and Capital Budgets}
+      \field{volume}{47}
+      \field{year}{1965}
+      \field{pages}{13\bibrangedash 37}
+      \range{pages}{25}
+      \verb{doi}
+      \verb 10.2307/1924119
+      \endverb
+    \endentry
+    \entry{lioui2022}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=8e8cb91a7129dc547f7c4ac9b0642e21}{%
+           family={Lioui},
+           familyi={L\bibinitperiod},
+           given={Abraham},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a81b69dcf53d117b6149b72b9430753a}{%
+           family={Tarelli},
+           familyi={T\bibinitperiod},
+           given={Andrea},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{51cebb92c3f9030d4cb786f8ac04342e}
+      \strng{fullhash}{51cebb92c3f9030d4cb786f8ac04342e}
+      \strng{bibnamehash}{51cebb92c3f9030d4cb786f8ac04342e}
+      \strng{authorbibnamehash}{51cebb92c3f9030d4cb786f8ac04342e}
+      \strng{authornamehash}{51cebb92c3f9030d4cb786f8ac04342e}
+      \strng{authorfullhash}{51cebb92c3f9030d4cb786f8ac04342e}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Banking \& Finance}
+      \field{title}{Chasing the {ESG} Factor}
+      \field{volume}{139}
+      \field{year}{2022}
+      \field{pages}{106498}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.jbankfin.2022.106498
+      \endverb
+    \endentry
+    \entry{markowitz1952}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=bdfa1c8585b5a4ae901315043a00f2f2}{%
+           family={Markowitz},
+           familyi={M\bibinitperiod},
+           given={Harry},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{bdfa1c8585b5a4ae901315043a00f2f2}
+      \strng{fullhash}{bdfa1c8585b5a4ae901315043a00f2f2}
+      \strng{bibnamehash}{bdfa1c8585b5a4ae901315043a00f2f2}
+      \strng{authorbibnamehash}{bdfa1c8585b5a4ae901315043a00f2f2}
+      \strng{authornamehash}{bdfa1c8585b5a4ae901315043a00f2f2}
+      \strng{authorfullhash}{bdfa1c8585b5a4ae901315043a00f2f2}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Finance}
+      \field{number}{1}
+      \field{title}{Portfolio Selection}
+      \field{volume}{7}
+      \field{year}{1952}
+      \field{pages}{77\bibrangedash 91}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1111/j.1540-6261.1952.tb01525.x
+      \endverb
+    \endentry
+    \entry{mossin1966}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=c62853668bdb2e78376578bdeb97ab6d}{%
+           family={Mossin},
+           familyi={M\bibinitperiod},
+           given={Jan},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{c62853668bdb2e78376578bdeb97ab6d}
+      \strng{fullhash}{c62853668bdb2e78376578bdeb97ab6d}
+      \strng{bibnamehash}{c62853668bdb2e78376578bdeb97ab6d}
+      \strng{authorbibnamehash}{c62853668bdb2e78376578bdeb97ab6d}
+      \strng{authornamehash}{c62853668bdb2e78376578bdeb97ab6d}
+      \strng{authorfullhash}{c62853668bdb2e78376578bdeb97ab6d}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Econometrica}
+      \field{number}{4}
+      \field{title}{Equilibrium in a Capital Asset Market}
+      \field{volume}{34}
+      \field{year}{1966}
+      \field{pages}{768\bibrangedash 783}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.2307/1910098
+      \endverb
+    \endentry
+    \entry{nagy2016}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=7b7bb11109fe8e22620870c1693f4d3b}{%
+           family={Nagy},
+           familyi={N\bibinitperiod},
+           given={Zoltán},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a346c60568c119c1fc8ca22096b95925}{%
+           family={Kassam},
+           familyi={K\bibinitperiod},
+           given={Altaf},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=48e66b749b8979c17ec9cb9f8b65bc57}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={Linda-Eling},
+           giveni={L\bibinithyphendelim E\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{f935a9d236fdeb9e9d33ee91b20b4dcc}
+      \strng{fullhash}{372335722318b9138d3fe326d17d0b1f}
+      \strng{bibnamehash}{372335722318b9138d3fe326d17d0b1f}
+      \strng{authorbibnamehash}{372335722318b9138d3fe326d17d0b1f}
+      \strng{authornamehash}{f935a9d236fdeb9e9d33ee91b20b4dcc}
+      \strng{authorfullhash}{372335722318b9138d3fe326d17d0b1f}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Investing}
+      \field{number}{2}
+      \field{title}{Can {ESG} Add Alpha? An Analysis of {ESG} Tilt and Momentum Strategies}
+      \field{volume}{25}
+      \field{year}{2016}
+      \true{nocite}
+      \field{pages}{113\bibrangedash 124}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.3905/joi.2016.25.2.113
+      \endverb
+    \endentry
+    \entry{pastor2021}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=1be825d7175b7af626c78cd8d18cb165}{%
+           family={Pástor},
+           familyi={P\bibinitperiod},
+           given={Ľuboš},
+           giveni={Ľ\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1395517a8354900f86286e02adb6299d}{%
+           family={Stambaugh},
+           familyi={S\bibinitperiod},
+           given={Robert\bibnamedelima F.},
+           giveni={R\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d190a7a6e74cebaa68a72b0d502cb7b6}{%
+           family={Taylor},
+           familyi={T\bibinitperiod},
+           given={Lucian\bibnamedelima A.},
+           giveni={L\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{2cd883c3eb5c9c64e4d169a164b99440}
+      \strng{fullhash}{202d1a65e5ef8f9156c96370227f0398}
+      \strng{bibnamehash}{202d1a65e5ef8f9156c96370227f0398}
+      \strng{authorbibnamehash}{202d1a65e5ef8f9156c96370227f0398}
+      \strng{authornamehash}{2cd883c3eb5c9c64e4d169a164b99440}
+      \strng{authorfullhash}{202d1a65e5ef8f9156c96370227f0398}
+      \field{extraname}{1}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Financial Economics}
+      \field{number}{2}
+      \field{title}{Sustainable Investing in Equilibrium}
+      \field{volume}{142}
+      \field{year}{2021}
+      \field{pages}{550\bibrangedash 571}
+      \range{pages}{22}
+      \verb{doi}
+      \verb 10.1016/j.jfineco.2020.12.011
+      \endverb
+    \endentry
+    \entry{pastor2022}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=1be825d7175b7af626c78cd8d18cb165}{%
+           family={Pástor},
+           familyi={P\bibinitperiod},
+           given={Ľuboš},
+           giveni={Ľ\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1395517a8354900f86286e02adb6299d}{%
+           family={Stambaugh},
+           familyi={S\bibinitperiod},
+           given={Robert\bibnamedelima F.},
+           giveni={R\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d190a7a6e74cebaa68a72b0d502cb7b6}{%
+           family={Taylor},
+           familyi={T\bibinitperiod},
+           given={Lucian\bibnamedelima A.},
+           giveni={L\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{2cd883c3eb5c9c64e4d169a164b99440}
+      \strng{fullhash}{202d1a65e5ef8f9156c96370227f0398}
+      \strng{bibnamehash}{202d1a65e5ef8f9156c96370227f0398}
+      \strng{authorbibnamehash}{202d1a65e5ef8f9156c96370227f0398}
+      \strng{authornamehash}{2cd883c3eb5c9c64e4d169a164b99440}
+      \strng{authorfullhash}{202d1a65e5ef8f9156c96370227f0398}
+      \field{extraname}{2}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Financial Economics}
+      \field{number}{2}
+      \field{title}{Dissecting Green Returns}
+      \field{volume}{146}
+      \field{year}{2022}
+      \field{pages}{403\bibrangedash 424}
+      \range{pages}{22}
+      \verb{doi}
+      \verb 10.1016/j.jfineco.2022.07.007
+      \endverb
+    \endentry
+    \entry{pedersen2021}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=07123ce41f03a63251aed38e35aa6029}{%
+           family={Pedersen},
+           familyi={P\bibinitperiod},
+           given={Lasse\bibnamedelima Heje},
+           giveni={L\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=be13fef765869cf7cede94b7f2e3a0b3}{%
+           family={Fitzgibbons},
+           familyi={F\bibinitperiod},
+           given={Shaun},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d3e6e49816dda8282982cab8348aa051}{%
+           family={Pomorski},
+           familyi={P\bibinitperiod},
+           given={Lukasz},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{ed60265874c5d8301308c436c77ffb81}
+      \strng{fullhash}{1eae3c4cc3997ca46ae05f70e20c73fd}
+      \strng{bibnamehash}{1eae3c4cc3997ca46ae05f70e20c73fd}
+      \strng{authorbibnamehash}{1eae3c4cc3997ca46ae05f70e20c73fd}
+      \strng{authornamehash}{ed60265874c5d8301308c436c77ffb81}
+      \strng{authorfullhash}{1eae3c4cc3997ca46ae05f70e20c73fd}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Financial Economics}
+      \field{number}{2}
+      \field{title}{{Responsible Investing: The ESG-Efficient Frontier}}
+      \field{volume}{142}
+      \field{year}{2021}
+      \field{pages}{572\bibrangedash 597}
+      \range{pages}{26}
+      \verb{doi}
+      \verb 10.1016/j.jfineco.2020.11.001
+      \endverb
+    \endentry
+    \entry{rosenberg1985}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=c00b40889aa52907867f6cc2221bf6ba}{%
+           family={Rosenberg},
+           familyi={R\bibinitperiod},
+           given={Barr},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=767ae58bb45341caf8605e4fbd01469a}{%
+           family={Reid},
+           familyi={R\bibinitperiod},
+           given={Kenneth},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7eba398dac7557a695cbb7b4b1025726}{%
+           family={Lanstein},
+           familyi={L\bibinitperiod},
+           given={Ronald},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{54a26ac00b81cdfc5e84a6f9b89d2089}
+      \strng{fullhash}{ae50f8af62bcfe6dfab3944aaee1d0d5}
+      \strng{bibnamehash}{ae50f8af62bcfe6dfab3944aaee1d0d5}
+      \strng{authorbibnamehash}{ae50f8af62bcfe6dfab3944aaee1d0d5}
+      \strng{authornamehash}{54a26ac00b81cdfc5e84a6f9b89d2089}
+      \strng{authorfullhash}{ae50f8af62bcfe6dfab3944aaee1d0d5}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Portfolio Management}
+      \field{number}{3}
+      \field{title}{Persuasive Evidence of Market Inefficiency}
+      \field{volume}{11}
+      \field{year}{1985}
+      \true{nocite}
+      \field{pages}{9\bibrangedash 16}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.3905/jpm.1985.409007
+      \endverb
+    \endentry
+    \entry{sharpe1964}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=7713eaeb6845785b0f6bb5cffab120d1}{%
+           family={Sharpe},
+           familyi={S\bibinitperiod},
+           given={William\bibnamedelima F.},
+           giveni={W\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{7713eaeb6845785b0f6bb5cffab120d1}
+      \strng{fullhash}{7713eaeb6845785b0f6bb5cffab120d1}
+      \strng{bibnamehash}{7713eaeb6845785b0f6bb5cffab120d1}
+      \strng{authorbibnamehash}{7713eaeb6845785b0f6bb5cffab120d1}
+      \strng{authornamehash}{7713eaeb6845785b0f6bb5cffab120d1}
+      \strng{authorfullhash}{7713eaeb6845785b0f6bb5cffab120d1}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Finance}
+      \field{number}{3}
+      \field{title}{Capital Asset Prices: A Theory of Market Equilibrium under Conditions of Risk}
+      \field{volume}{19}
+      \field{year}{1964}
+      \field{pages}{425\bibrangedash 442}
+      \range{pages}{18}
+      \verb{doi}
+      \verb 10.1111/j.1540-6261.1964.tb02865.x
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

@@ -1,0 +1,42 @@
+\babel@toc {spanish}{}\relax 
+\contentsline {section}{\numberline {1}Introducción}{3}{section.1}%
+\contentsline {section}{\numberline {2}Marco Teórico}{4}{section.2}%
+\contentsline {subsection}{\numberline {2.1}El modelo CAPM}{4}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}El modelo de tres factores de Fama y French}{4}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Fundamentos teóricos de la prima ESG}{5}{subsection.2.3}%
+\contentsline {paragraph}{Teoría de compensación por riesgo.}{5}{section*.2}%
+\contentsline {paragraph}{Teoría de la utilidad no pecuniaria.}{5}{section*.3}%
+\contentsline {paragraph}{Teoría de mercados eficientes.}{5}{section*.4}%
+\contentsline {subsection}{\numberline {2.4}El factor ESG tipo Fama-French}{5}{subsection.2.4}%
+\contentsline {section}{\numberline {3}Revisión de la Literatura}{6}{section.3}%
+\contentsline {subsection}{\numberline {3.1}ESG y rendimientos financieros: evidencia general}{6}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}El marco teórico de Pástor, Stambaugh y Taylor}{6}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}La frontera ESG-eficiente de Pedersen, Fitzgibbons y Pomorski}{7}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}La divergencia de calificaciones ESG}{7}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}Factores ESG en modelos multifactoriales}{7}{subsection.3.5}%
+\contentsline {section}{\numberline {4}Metodología}{8}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Clasificación ESG y construcción del factor GMB}{8}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Regresión de series temporales y estimación}{8}{subsection.4.2}%
+\contentsline {section}{\numberline {5}Datos}{9}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Muestra de empresas}{9}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Datos de rentabilidades}{9}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Puntuaciones ESG}{10}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}Estadísticos descriptivos}{10}{subsection.5.4}%
+\contentsline {section}{\numberline {6}Resultados}{12}{section.6}%
+\contentsline {subsection}{\numberline {6.1}La prima del factor GMB}{12}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Regresión del modelo de tres factores (FF3F)}{12}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Regresión del modelo de cuatro factores (FF4F-ESG)}{13}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.4}Resultados por tercil ESG}{14}{subsection.6.4}%
+\contentsline {subsection}{\numberline {6.5}Ejemplo individual: TotalEnergies (TTE.PA)}{14}{subsection.6.5}%
+\contentsline {subsection}{\numberline {6.6}Análisis sectorial}{15}{subsection.6.6}%
+\contentsline {subsection}{\numberline {6.7}Descomposición de Shapley del R² (IBEX~35)}{16}{subsection.6.7}%
+\contentsline {section}{\numberline {7}Conclusiones}{17}{section.7}%
+\contentsline {paragraph}{1. La prima del factor GMB es negativa y no significativa.}{17}{section*.15}%
+\contentsline {paragraph}{2. El factor GMB discrimina en sección transversal.}{17}{section*.16}%
+\contentsline {paragraph}{3. Mejora marginal del ajuste del modelo.}{17}{section*.17}%
+\contentsline {paragraph}{4. El shock geopolítico de defensa domina el período.}{17}{section*.18}%
+\contentsline {paragraph}{5. Alta correlación GMB-HML como advertencia metodológica.}{17}{section*.19}%
+\contentsline {paragraph}{6. Consistencia con el marco teórico de Pástor, Stambaugh y Taylor.}{18}{section*.20}%
+\contentsline {paragraph}{Limitaciones principales.}{18}{section*.21}%
+\contentsline {paragraph}{Líneas de investigación futuras.}{18}{section*.22}%
+\contentsline {section}{\numberline {A}Datos de series temporales de los factores (extracto)}{21}{appendix.Alph1}%
