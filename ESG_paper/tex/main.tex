@@ -19,34 +19,24 @@
 \usepackage{lmodern}
 \usepackage{microtype}
 \usepackage{setspace}
-\usepackage{titlesec}
-\usepackage{abstract}
 \usepackage{fancyhdr}
 \usepackage{xcolor}
-\usepackage{tcolorbox}
 \usepackage{siunitx}
+\usepackage{rotating}
 
 \addbibresource{referencias.bib}
 
-% ─── Geometría ───────────────────────────────────────────────────────────────
-\geometry{
-  a4paper,
-  left=3cm, right=2.5cm,
-  top=2.5cm, bottom=2.5cm
-}
-
+\geometry{a4paper, left=3cm, right=2.5cm, top=2.5cm, bottom=2.5cm}
 \onehalfspacing
 
-% ─── Cabecera ────────────────────────────────────────────────────────────────
 \pagestyle{fancy}
 \fancyhf{}
 \rhead{\small Prima ESG como factor Fama-French}
 \lhead{\small Yan Ru Wu Jin}
 \cfoot{\thepage}
 
-% ─── Definiciones matemáticas ────────────────────────────────────────────────
 \newtheorem{definition}{Definición}
-\newtheorem{proposition}{Proposición}
+\newcommand{\pval}[1]{\ensuremath{p=#1}}
 
 % ─────────────────────────────────────────────────────────────────────────────
 \begin{document}
@@ -59,9 +49,10 @@
   Facultad de Ciencias Económicas y Empresariales}\\[2cm]
 
   \rule{\linewidth}{0.5mm}\\[0.5em]
-  {\LARGE\bfseries La Prima de Mercado ESG como Factor Adicional\\[0.3em]
-  en el Modelo de Tres Factores de Fama y French:\\[0.3em]
-  Evidencia Empírica para el Mercado [\textit{ESPECIFICAR MERCADO}]}\\[0.3em]
+  {\LARGE\bfseries La Sostenibilidad como Factor de Valoración de Activos:\\[0.3em]
+  Ampliación del Modelo de Tres Factores de Fama y French\\[0.3em]
+  mediante un Factor \textit{Green Minus Brown} en el\\[0.3em]
+  Mercado Europeo (STOXX~600, 2021--2025)}\\[0.3em]
   \rule{\linewidth}{0.5mm}\\[2cm]
 
   {\large Trabajo de Fin de Grado\\[0.5em]
@@ -81,19 +72,34 @@
 \newpage
 \begin{abstract}
 \noindent
-Este trabajo investiga si los factores ESG (Environmental, Social and Governance) generan
-una prima de riesgo estadísticamente significativa que no es capturada por los modelos
-de valoración de activos tradicionales. Para ello, se construye un factor ESG siguiendo
-la metodología de Fama y French (1993), denominado \textit{HEL} (High ESG minus Low ESG),
-y se contrasta su poder explicativo sobre los rendimientos en exceso de una muestra de
-[\textit{N} empresas / índices] durante el período [\textit{fecha inicio}--\textit{fecha fin}].
-Los resultados sugieren que [\textit{insertar resumen de hallazgos principales}].
-El modelo de cuatro factores (FF3F + ESG) mejora el ajuste con respecto al modelo
-de tres factores, con un $\bar{R}^2$ de [\textit{valor}] frente a [\textit{valor}].
+Este trabajo investiga si los criterios ESG (\textit{Environmental, Social and Governance})
+constituyen un factor de riesgo sistemático con prima estadísticamente significativa en el
+mercado europeo. Para ello, se construye un factor de sostenibilidad denominado
+\textit{Green Minus Brown} (GMB) ---análogo a los factores SMB y HML del modelo de
+Fama y French (1993)--- a partir de carteras de terciles formadas con las puntuaciones
+ESG de Refinitiv Eikon para una muestra de 431 empresas del STOXX Europe 600
+(excluidas entidades financieras y bancarias), durante el período enero de 2021 a
+diciembre de 2025 con datos mensuales (59 observaciones).
+
+Los resultados muestran que la prima media del factor GMB fue de $-1{,}77\,\%$
+anualizado, con las carteras de bajo ESG (Brown) superando a las de alto ESG (Green)
+en rentabilidad bruta ($13{,}52\,\%$ frente a $11{,}53\,\%$ anualizados).
+Sin embargo, esta diferencia no es estadísticamente significativa ($t = -0{,}784$,
+$p = 0{,}436$). A nivel de activo individual, el coeficiente de carga factorial ESG
+promedio es positivo y altamente significativo en sección transversal ($\bar{e} = +0{,}490$,
+$t = 7{,}23$, $p < 0{,}001$), si bien solo el $15{,}3\,\%$ de las acciones presentan
+carga ESG individualmente significativa. La incorporación del factor GMB al modelo FF3F
+mejora marginalmente el ajuste medio ($\bar{R}^2$: $0{,}2242 \to 0{,}2339$) y reduce
+el número de acciones con alfa significativo del $14{,}8\,\%$ al $13{,}0\,\%$.
+El análisis sectorial revela que el sector de defensa e industria pesada domina la cola
+negativa del factor, consecuencia del shock geopolítico de rearmamento europeo
+post-2022. Los resultados son coherentes con la hipótesis de Pástor, Stambaugh y Taylor
+(2021, 2022): las acciones \textit{brown} obtienen rendimientos realizados superiores
+en un período de reversión de la demanda ESG.
 
 \vspace{1em}
-\noindent\textbf{Palabras clave:} ESG, prima de riesgo, modelo de Fama-French, inversión
-sostenible, valoración de activos, factor HEL, CAPM.
+\noindent\textbf{Palabras clave:} ESG, prima de riesgo, modelo de Fama-French,
+inversión sostenible, valoración de activos, factor Green Minus Brown, STOXX 600.
 
 \vspace{1em}
 \noindent\textbf{Clasificación JEL:} G11, G12, G14, M14.
@@ -108,41 +114,41 @@ sostenible, valoración de activos, factor HEL, CAPM.
 \label{sec:intro}
 % ═════════════════════════════════════════════════════════════════════════════
 
-En las últimas décadas, la inversión bajo criterios de sostenibilidad ha experimentado
-un crecimiento exponencial. Según el \textit{Global Sustainable Investment Alliance}
-(GSIA, 2022), los activos gestionados con algún criterio ESG superaron los 35 billones
-de dólares en 2020, representando más del 35\,\% del total de activos bajo gestión
-a nivel mundial. Este auge plantea una cuestión fundamental para la teoría financiera:
-¿existe una \textit{prima de mercado ESG}? Es decir, ¿los inversores exigen una rentabilidad
-adicional —o aceptan una inferior— por invertir en activos con mejores (o peores)
-puntuaciones ESG?
+La inversión bajo criterios de sostenibilidad ha crecido exponencialmente en las últimas
+décadas. Según el \textit{Global Sustainable Investment Alliance} (GSIA, 2022), los activos
+gestionados con algún criterio ESG superaron los 35 billones de dólares en 2020, representando
+más del 35\,\% del total de activos bajo gestión a nivel mundial. Este auge plantea una
+pregunta fundamental para la teoría financiera: ¿existe una \textit{prima de mercado ESG}?
+Es decir, ¿los inversores exigen una rentabilidad adicional ---o aceptan una inferior---
+por invertir en activos con mejores o peores puntuaciones ESG?
 
-La respuesta a esta pregunta tiene implicaciones tanto teóricas como prácticas.
-Desde el punto de vista teórico, cuestiona si los modelos estándar de valoración
-de activos —como el CAPM de Sharpe (1964) y Lintner (1965) o el modelo de tres
-factores de Fama y French (1993)— son suficientes para explicar la sección transversal
-de rendimientos, o si existe una fuente de riesgo sistemático vinculada a la
-sostenibilidad que estos modelos omiten. Desde el punto de vista práctico, afecta
-a las decisiones de asignación de activos, la gestión de carteras responsables y
-el diseño de productos financieros ESG.
+La respuesta tiene implicaciones tanto teóricas como prácticas. Desde el punto de vista
+teórico, cuestiona si los modelos estándar de valoración de activos ---como el CAPM
+de Sharpe (1964) y Lintner (1965) o el modelo de tres factores de Fama y French (1993)---
+son suficientes para explicar la sección transversal de rendimientos, o si existe una fuente
+de riesgo sistemático vinculada a la sostenibilidad que estos modelos omiten. Desde el punto
+de vista práctico, afecta a las decisiones de asignación de activos y al diseño de productos
+financieros ESG.
 
-La literatura académica no ha llegado a un consenso. Mientras que algunos trabajos
-encuentran que las empresas con mejores puntuaciones ESG obtienen rendimientos superiores
-ajustados por riesgo (Edmans, 2011; Eccles, Ioannou y Serafeim, 2014), otros
-documentan que los inversores ``verdes'' aceptan rendimientos inferiores como
-compensación no financiera (Pástor, Stambaugh y Taylor, 2021, 2022), y un tercer
-grupo no encuentra relación estadísticamente significativa (Hong y Kacperczyk, 2009).
+La literatura académica no ha alcanzado consenso. Pástor, Stambaugh y Taylor (2021, 2022)
+demuestran que las acciones verdes tienen menores rendimientos esperados en equilibrio, aunque
+pueden obtener rendimientos realizados superiores durante períodos de creciente demanda ESG.
+Pedersen, Fitzgibbons y Pomorski (2021) proponen una frontera eficiente ajustada por ESG,
+mientras que Friede, Busch y Bassen (2015), en un meta-análisis de más de 2.000 estudios,
+concluyen que la relación ESG-rentabilidad es predominantemente no negativa. Berg, Kölbel y
+Rigobon (2022) documentan que la baja correlación entre proveedores de puntuaciones ESG
+(0,38--0,71) dificulta la identificación empírica.
 
-Este trabajo contribuye a ese debate mediante la construcción de un factor ESG
-adicional —que denominamos \textit{HEL} (High ESG minus Low ESG)— siguiendo
-la metodología de construcción de carteras de Fama y French (1993), e incorporándolo
-al modelo de tres factores para obtener un modelo de cuatro factores.
-[\textit{Describir brevemente los datos y el mercado analizado.}]
+Este trabajo contribuye a ese debate construyendo un factor GMB (\textit{Green Minus Brown})
+para el mercado europeo (STOXX 600, 431 empresas) durante 2021--2025, e incorporándolo al
+modelo de Fama y French de tres factores para evaluar su capacidad explicativa sobre los
+rendimientos en exceso individuales. El trabajo replica y extiende la metodología de
+carteras de Fama y French (1993), usando datos de Refinitiv Eikon para las puntuaciones ESG
+y los factores del mercado europeo de Kenneth French.
 
-El resto del trabajo se organiza de la siguiente manera: la Sección~\ref{sec:marco}
-presenta el marco teórico; la Sección~\ref{sec:revision} revisa la literatura
-empírica relevante; la Sección~\ref{sec:metodologia} describe la metodología;
-la Sección~\ref{sec:datos} detalla los datos; la Sección~\ref{sec:resultados}
+El resto del trabajo se organiza así: la Sección~\ref{sec:marco} presenta el marco teórico;
+la Sección~\ref{sec:revision} revisa la literatura; la Sección~\ref{sec:metodologia}
+describe la metodología; la Sección~\ref{sec:datos} detalla los datos; la Sección~\ref{sec:resultados}
 presenta los resultados; y la Sección~\ref{sec:conclusiones} concluye.
 
 % ═════════════════════════════════════════════════════════════════════════════
@@ -153,155 +159,115 @@ presenta los resultados; y la Sección~\ref{sec:conclusiones} concluye.
 \subsection{El modelo CAPM}
 \label{subsec:capm}
 
-El modelo de valoración de activos de capital (\textit{Capital Asset Pricing Model},
-CAPM) fue desarrollado de forma independiente por Sharpe (1964), Lintner (1965)
-y Mossin (1966) a partir de la teoría de selección de carteras de Markowitz (1952).
-Bajo los supuestos de mercados perfectos, expectativas homogéneas e inversores
-aversos al riesgo con función de utilidad de varianza media, el CAPM establece que
-la rentabilidad esperada de cualquier activo $i$ satisface:
+El modelo de valoración de activos de capital (CAPM, por sus siglas en inglés) fue
+desarrollado independientemente por Sharpe (1964), Lintner (1965) y Mossin (1966),
+a partir de la teoría de carteras de Markowitz (1952). Bajo los supuestos de mercados
+perfectos, expectativas homogéneas e inversores maximizadores de utilidad media-varianza,
+el CAPM establece que la rentabilidad esperada de cualquier activo $i$ satisface:
 
 \begin{equation}
   \label{eq:capm}
-  \mathbb{E}[R_i] - R_f = \beta_i \, \bigl(\mathbb{E}[R_m] - R_f\bigr),
+  \mathbb{E}[R_i] - R_f = \beta_i \bigl(\mathbb{E}[R_m] - R_f\bigr),
 \end{equation}
 
-donde $R_i$ es la rentabilidad del activo $i$, $R_f$ es la tasa libre de riesgo,
-$R_m$ es la rentabilidad de la cartera de mercado y $\beta_i$ es la covarianza de $R_i$
-con $R_m$ normalizada por la varianza de $R_m$:
-
-\begin{equation}
-  \label{eq:beta}
-  \beta_i = \frac{\mathrm{Cov}(R_i, R_m)}{\mathrm{Var}(R_m)}.
-\end{equation}
-
-La magnitud $\mathbb{E}[R_m] - R_f$ se denomina \textit{prima de mercado} y constituye
-el precio del riesgo sistemático en el CAPM. En su versión empírica, el CAPM se
-estima mediante la regresión de series temporales propuesta por Black, Jensen y
-Scholes (1972):
+donde $R_f$ es la tasa libre de riesgo, $R_m$ es la rentabilidad de la cartera de mercado
+y $\beta_i = \mathrm{Cov}(R_i, R_m)/\mathrm{Var}(R_m)$ mide la exposición al riesgo
+sistemático. La versión empírica (Jensen, 1968) añade el término $\alpha_i$ (alfa de Jensen):
 
 \begin{equation}
   \label{eq:capm_ts}
-  R_{i,t} - R_{f,t} = \alpha_i + \beta_i \, (R_{m,t} - R_{f,t}) + \varepsilon_{i,t},
+  R_{i,t} - R_{f,t} = \alpha_i + \beta_i(R_{m,t} - R_{f,t}) + \varepsilon_{i,t}.
 \end{equation}
 
-donde $\alpha_i$ (``alfa de Jensen'') mide la rentabilidad anormal no explicada
-por el factor de mercado. Si el CAPM es válido, $\alpha_i = 0$ para todos los activos.
-
-Sin embargo, una extensa literatura empírica ha documentado la existencia de
-\textit{anomalías} —patrones sistemáticos de rentabilidad no explicados por el CAPM—
-que constituyen evidencia en su contra. Las más robustas incluyen el \textit{efecto tamaño}
-(Banz, 1981), el \textit{efecto valor} (Rosenberg, Reid y Lanstein, 1985;
-Fama y French, 1992) y el efecto \textit{momentum} (Jegadeesh y Titman, 1993).
+Si el CAPM es válido, $\alpha_i = 0$ para todos los activos. Sin embargo, la literatura
+empírica ha documentado sistemáticamente la existencia de anomalías no capturadas: el
+\textit{efecto tamaño} (Banz, 1981), el \textit{efecto valor} (Rosenberg, Reid y Lanstein,
+1985; Fama y French, 1992) y el \textit{efecto momentum} (Jegadeesh y Titman, 1993),
+entre otros. Fama y French (2004) documentan estos fracasos empíricos y concluyen que
+el CAPM no supera el escrutinio empírico.
 
 \subsection{El modelo de tres factores de Fama y French}
 \label{subsec:ff3f}
 
-Para capturar las anomalías de tamaño y valor, Fama y French (1993) proponen ampliar
-el CAPM con dos factores adicionales. Su modelo de tres factores (FF3F) es:
+Para capturar las anomalías de tamaño y valor, Fama y French (1993) proponen el modelo
+de tres factores (FF3F):
 
 \begin{equation}
   \label{eq:ff3f}
-  R_{i,t} - R_{f,t} = \alpha_i + \beta_i \, \mathrm{MKT}_t
-    + s_i \, \mathrm{SMB}_t + h_i \, \mathrm{HML}_t + \varepsilon_{i,t},
+  R_{i,t} - R_{f,t} = \alpha_i + \beta_i\,\mathrm{MKT}_t
+    + s_i\,\mathrm{SMB}_t + h_i\,\mathrm{HML}_t + \varepsilon_{i,t},
 \end{equation}
 
-donde:
+donde $\mathrm{MKT}_t = R_{m,t}-R_{f,t}$ es la prima de mercado, $\mathrm{SMB}_t$
+(\textit{Small Minus Big}) captura la prima de tamaño, y $\mathrm{HML}_t$
+(\textit{High Minus Low}) captura la prima de valor (\textit{book-to-market}).
 
-\begin{itemize}
-  \item $\mathrm{MKT}_t = R_{m,t} - R_{f,t}$ es el factor de mercado (prima de riesgo
-        de mercado).
+La construcción de SMB y HML sigue una metodología de doble clasificación. En junio de
+cada año, las empresas se ordenan simultáneamente por capitalización bursátil (dos grupos:
+\textit{Small} y \textit{Big}, usando la mediana de NYSE como corte) y por ratio
+\textit{book-to-market} (tres grupos con percentiles 30 y 70). La intersección genera
+seis carteras ponderadas por capitalización (SL, SM, SH, BL, BM, BH):
 
-  \item $\mathrm{SMB}_t$ (\textit{Small Minus Big}) captura la prima de tamaño: es
-        la diferencia en rentabilidad entre carteras de empresas pequeñas y grandes.
-
-  \item $\mathrm{HML}_t$ (\textit{High Minus Low}) captura la prima de valor: es la
-        diferencia en rentabilidad entre carteras de empresas con alto y bajo ratio
-        valor contable/valor de mercado (\textit{book-to-market}).
-\end{itemize}
-
-La construcción de SMB y HML sigue una metodología basada en intersecciones de carteras.
-En junio de cada año $t$, Fama y French ordenan las empresas por capitalización bursátil
-en dos grupos: \textit{Small} (S) y \textit{Big} (B), usando la mediana como punto de
-corte. Simultáneamente, las ordenan por su ratio \textit{book-to-market} en tres grupos:
-\textit{Low} (L, percentil 0--30), \textit{Medium} (M, percentil 30--70) y
-\textit{High} (H, percentil 70--100). La intersección de estas clasificaciones genera
-seis carteras: SL, SM, SH, BL, BM, BH.
-
-\begin{equation}
+\begin{align}
   \label{eq:smb}
-  \mathrm{SMB}_t = \frac{1}{3}(R_{SL,t} + R_{SM,t} + R_{SH,t})
-    - \frac{1}{3}(R_{BL,t} + R_{BM,t} + R_{BH,t}),
-\end{equation}
-
-\begin{equation}
+  \mathrm{SMB}_t &= \tfrac{1}{3}(R_{SL}+R_{SM}+R_{SH}) - \tfrac{1}{3}(R_{BL}+R_{BM}+R_{BH}),\\
   \label{eq:hml}
-  \mathrm{HML}_t = \frac{1}{2}(R_{SH,t} + R_{BH,t})
-    - \frac{1}{2}(R_{SL,t} + R_{BL,t}).
-\end{equation}
+  \mathrm{HML}_t &= \tfrac{1}{2}(R_{SH}+R_{BH}) - \tfrac{1}{2}(R_{SL}+R_{BL}).
+\end{align}
 
-Fama y French (1993) demuestran que este modelo captura buena parte de la variación
-en los rendimientos de las carteras de acciones estadounidenses, con $R^2$ cercanos
-al 90--95\,\% en carteras bien diversificadas. Los coeficientes $s_i > 0$ y $h_i > 0$
-indican que el activo $i$ se comporta más como empresas pequeñas y de valor,
-respectivamente.
-
-\subsection{Extensiones del modelo: el factor de cuatro y cinco factores}
-\label{subsec:extensiones}
-
-La literatura ha propuesto numerosas extensiones al FF3F. Las más influyentes son:
-
-\begin{enumerate}
-  \item \textbf{Modelo de cuatro factores de Carhart (1997)}: añade un factor
-        \textit{momentum} ($\mathrm{WML}_t$, \textit{Winners Minus Losers}) basado
-        en la diferencia de rentabilidad entre acciones ganadoras y perdedoras en
-        los últimos 12 meses.
-
-  \item \textbf{Modelo de cinco factores de Fama y French (2015)}: incorpora
-        dos factores adicionales —\textit{RMW} (\textit{Robust Minus Weak},
-        prima de rentabilidad) y \textit{CMA} (\textit{Conservative Minus Aggressive},
-        prima de inversión)— basados en la teoría de valoración por dividendos de
-        Miller y Modigliani.
-\end{enumerate}
-
-La lógica subyacente a estas extensiones es siempre la misma: si existe un patrón
-sistemático de rendimientos que el modelo vigente no explica, puede deberse a un
-factor de riesgo omitido. Este es precisamente el planteamiento que motiva la
-incorporación del factor ESG.
+Fama y French (1993) demuestran que el FF3F explica el 90--95\,\% de la variación en
+carteras test de acciones estadounidenses. En 2015 lo amplían con dos factores adicionales
+---\textit{RMW} (prima de rentabilidad operativa) y \textit{CMA} (prima de política de
+inversión)--- en el modelo de cinco factores (FF5F). Paralelamente, Carhart (1997) añade
+el factor \textit{momentum} (WML) al FF3F.
 
 \subsection{Fundamentos teóricos de la prima ESG}
 \label{subsec:teoria_esg}
 
-Existen al menos tres marcos teóricos que ofrecen predicciones sobre la relación
-entre criterios ESG y rendimientos financieros:
+Tres marcos teóricos ofrecen predicciones contrapuestas sobre la relación entre ESG
+y rendimientos financieros:
 
-\subsubsection{Teoría de la compensación por riesgo}
+\paragraph{Teoría de compensación por riesgo.} Si el bajo desempeño ESG constituye un
+riesgo sistemático ---por ejemplo, riesgo regulatorio (carbon pricing, taxonomía europea),
+riesgo reputacional o riesgo de activos varados (\textit{stranded assets})--- los inversores
+exigirán una prima para compensarlo. Las empresas \textit{brown} deberían ofrecer mayores
+rendimientos esperados (prima positiva para el factor GMB-marrón).
 
-Si el bajo desempeño ESG (por ejemplo, elevadas emisiones de carbono, escándalos
-de gobernanza o prácticas laborales cuestionables) constituye un riesgo sistemático
-—es decir, no diversificable—, los inversores exigirán una mayor rentabilidad
-esperada para compensarlo. En este caso, las empresas con menores puntuaciones
-ESG deberían ofrecer mayores rendimientos esperados (\textit{prima ESG positiva}
-para la cartera Long Low ESG - Short High ESG). Formalmente, el factor HEL tendría
-un precio negativo: las empresas muy ESG generan menos rentabilidad esperada porque
-son activos de cobertura frente al riesgo de sostenibilidad.
+\paragraph{Teoría de la utilidad no pecuniaria.} Pástor, Stambaugh y Taylor (2021)
+desarrollan un modelo de equilibrio con agentes heterogéneos: inversores con y sin
+preferencias ESG. En equilibrio, las acciones verdes tienen un precio más elevado y,
+por tanto, menores rendimientos esperados. Sin embargo, un aumento inesperado en las
+preferencias ESG puede generar rendimientos realizados superiores para las acciones verdes
+en el corto plazo.
 
-\subsubsection{Teoría de la utilidad no pecuniaria (\textit{taste-based preferences})}
+\paragraph{Teoría de mercados eficientes.} Bajo la hipótesis de eficiencia de mercado
+(Fama, 1970), si la información ESG está completamente reflejada en precios, no debería
+existir una prima sistemática explotable neta de costes de transacción.
 
-Pástor, Stambaugh y Taylor (2021, 2022) desarrollan un modelo de equilibrio en el
-que algunos inversores obtienen utilidad directa (\textit{no pecuniaria}) de invertir
-en activos verdes. En equilibrio, esto eleva el precio de los activos ESG, reduciendo
-su rendimiento esperado futuro. Sin embargo, un aumento inesperado en las preferencias
-de los inversores por activos ESG puede generar rendimientos \textit{realizados}
-superiores en el corto plazo, aunque los rendimientos \textit{esperados} sean inferiores.
-Este marco reconcilia la aparente contradicción entre los hallazgos empíricos.
+\subsection{El factor ESG tipo Fama-French}
+\label{subsec:factor_esg}
 
-\subsubsection{Teoría de la información y los mercados eficientes}
+Siguiendo la lógica de FF3F, se puede construir un factor ESG como la diferencia de
+rentabilidad entre carteras de alto y bajo ESG. Este factor, que denominamos
+\textit{Green Minus Brown} (GMB), mide el rendimiento diferencial de la sostenibilidad
+en el mercado:
 
-Bajo la hipótesis de mercados eficientes (Fama, 1970), si la información ESG está
-completamente reflejada en precios, no debería existir una prima ESG sistemática
-explotable (neta de costes de transacción). No obstante, si existen fricciones
-de mercado —como la inversión de muchos fondos institucionales en universos ESG
-restringidos— puede surgir una prima de liquidez o de exclusión.
+\begin{equation}
+  \label{eq:gmb}
+  \mathrm{GMB}_t = R_{\text{Green},t} - R_{\text{Brown},t}.
+\end{equation}
+
+El modelo de cuatro factores propuesto es:
+
+\begin{equation}
+  \label{eq:ff4f}
+  R_{i,t} - R_{f,t} = \alpha_i + \beta_i\,\mathrm{MKT}_t
+    + s_i\,\mathrm{SMB}_t + h_i\,\mathrm{HML}_t + e_i\,\mathrm{GMB}_t + \varepsilon_{i,t}.
+\end{equation}
+
+El coeficiente $e_i$ es la carga factorial ESG (\textit{ESG beta}): $e_i > 0$ indica que
+el activo covaria positivamente con las acciones verdes; $e_i < 0$ indica que se comporta
+como activo marrón. La prima del factor es el rendimiento esperado de GMB.
 
 % ═════════════════════════════════════════════════════════════════════════════
 \section{Revisión de la Literatura}
@@ -309,258 +275,281 @@ restringidos— puede surgir una prima de liquidez o de exclusión.
 % ═════════════════════════════════════════════════════════════════════════════
 
 \subsection{ESG y rendimientos financieros: evidencia general}
-\label{subsec:lit_general}
 
-La relación entre ESG y rendimiento financiero ha sido estudiada extensamente.
-Friede, Busch y Bassen (2015) realizaron un meta-análisis de más de 2.200 estudios
-publicados entre 1970 y 2014, concluyendo que aproximadamente el 90\,\% de ellos
-encuentran una relación no negativa entre ESG y rendimiento corporativo. No obstante,
-el metaanálisis también revela una importante heterogeneidad en los métodos y en las
-definiciones de ESG empleadas.
+El meta-análisis de Friede, Busch y Bassen (2015), que cubre más de 2.200 estudios
+empíricos publicados entre 1970 y 2014, concluye que aproximadamente el 90\,\% de ellos
+no encuentran una relación negativa entre ESG y rentabilidad corporativa. Sin embargo,
+los estudios basados en carteras muestran resultados más mixtos: los costes de screening
+y gestión activa erosionan buena parte de la ventaja ESG.
 
-En la literatura de asset pricing, Hong y Kacperczyk (2009) documentan que las
-denominadas ``\textit{sin stocks}'' (tabaco, alcohol, armas, juego) obtienen
-rendimientos ajustados por riesgo superiores, consistente con una \textit{prima
-de exclusión} exigida por inversores con restricciones ESG. Esto implica una
-prima positiva para las carteras de bajo ESG.
+Hong y Kacperczyk (2009) documentan que las denominadas \textit{sin stocks} (tabaco,
+alcohol, armas, juego) obtienen rendimientos anormales positivos de entre 2 y 3\,\% anuales,
+consistentes con una prima de exclusión exigida por inversores con restricciones ESG.
+Esto implica rendimientos superiores para las carteras de bajo ESG, lo que apoya la
+hipótesis de compensación por riesgo.
 
-Por el contrario, Edmans (2011) encuentra que las empresas en la lista ``100 Best
-Companies to Work For'' de Fortune generan rendimientos anormales positivos durante
-1984--2009, incluso controlando por factores de riesgo estándar. Eccles, Ioannou
-y Serafeim (2014) hallan resultados similares utilizando un índice de sostenibilidad
-compuesto.
+\subsection{El marco teórico de Pástor, Stambaugh y Taylor}
 
-\subsection{ESG como factor de riesgo sistemático}
-\label{subsec:lit_factor}
+Pástor, Stambaugh y Taylor (2021) desarrollan el marco teórico más completo para entender
+la prima ESG. En su modelo de equilibrio general, los inversores difieren en sus preferencias
+por activos verdes: unos obtienen utilidad no pecuniaria de poseer activos sostenibles y
+aceptan menores rendimientos financieros. En equilibrio, las acciones verdes tienen
+\textbf{menores rendimientos esperados}. Sin embargo, cuando el gusto agregado por la
+sostenibilidad crece de forma inesperada, las acciones verdes obtienen
+\textbf{rendimientos realizados superiores} en ese período.
 
-La cuestión de si los criterios ESG constituyen un factor de riesgo sistemático
-ha motivado trabajos que adoptan directamente la metodología de Fama y French.
+Esta distinción es crucial: la superioridad de los retornos realizados de los activos ESG
+durante 2010--2021 no refleja mayores rendimientos esperados futuros, sino shocks positivos
+de demanda. En Pástor, Stambaugh y Taylor (2022), los autores descomponen los retornos
+de carteras verdes vs.\ marrones en componentes de rendimientos esperados (negativos para
+las verdes), shocks de preferencias ESG y shocks de flujos, verificando empíricamente
+que el período de superioridad realizada de las acciones verdes es explicado casi
+exclusivamente por shocks de demanda inesperados.
 
-Pedersen, Fitzgibbons y Pomorski (2021) proponen un modelo de equilibrio donde
-los inversores difieren en su acceso a información ESG. En su framework, las
-puntuaciones ESG afectan tanto al riesgo percibido como a los rendimientos esperados,
-y demuestran que una \textit{frontera eficiente ESG} domina la frontera media-varianza
-estándar. Su validación empírica muestra que los activos con altas puntuaciones
-ESG tienen betas más bajas y menores costes de capital.
+El presente trabajo analiza el período 2021--2025, en el que las condiciones geopolíticas
+---la guerra de Ucrania y el rearmamento europeo--- alteraron radicalmente el entorno,
+favoreciendo a empresas de sectores con baja puntuación ESG (defensa, energía fósil,
+materias primas). El marco de PST predice que, en ausencia de shocks de demanda
+favorables a las acciones verdes, el rendimiento del factor GMB sería negativo.
 
-Pástor, Stambaugh y Taylor (2021) desarrollan el marco teórico más completo
-hasta la fecha. En su modelo, los inversores heterogéneos difieren en sus
-``gustos'' por activos verdes. Las acciones verdes tienen menor rendimiento esperado
-en equilibrio (su precio incorpora la utilidad no pecuniaria). Sin embargo, cuando
-el gusto agregado por la sostenibilidad crece de forma inesperada, las acciones
-verdes obtienen rendimientos realizados superiores. Esto genera una distinción
-crucial entre rendimientos \textit{esperados} (negativamente relacionados con ESG)
-y rendimientos \textit{realizados} (potencialmente positivos en periodos de auge ESG).
+\subsection{La frontera ESG-eficiente de Pedersen, Fitzgibbons y Pomorski}
 
-En su trabajo posterior (Pástor, Stambaugh y Taylor, 2022), estiman este modelo
-con datos de fondos de inversión sostenible y encuentran evidencia empírica consistente:
-los fondos ESG obtuvieron rendimientos inferiores en el largo plazo, pero rendimientos
-superiores durante el periodo de creciente concienciación ESG (2016--2020).
+Pedersen, Fitzgibbons y Pomorski (2021) proponen un marco más matizado en el que el ESG
+desempeña dos roles simultáneos: como señal de fundamentales empresariales (mejor gestión,
+menor riesgo operativo) y como objeto de preferencia directa del inversor. Introducen el
+concepto de \textit{frontera ESG-eficiente}: la máxima relación Sharpe para cada nivel de
+puntuación ESG agregada de la cartera. Los inversores que utilizan el ESG como señal
+informativa pueden obtener mayor Sharpe ratio que los que lo ignoran, porque el ESG
+captura información sobre los fundamentales que los precios no reflejan completamente.
 
-\subsection{Construcción de factores ESG tipo Fama-French}
-\label{subsec:lit_metodologia}
+\subsection{La divergencia de calificaciones ESG}
 
-Varios trabajos han construido factores ESG siguiendo la metodología de carteras
-ordenadas de Fama y French.
+Berg, Kölbel y Rigobon (2022) documentan un hallazgo metodológicamente crítico para la
+investigación empírica: las correlaciones promedio por pares entre las principales agencias
+de calificación ESG oscilan entre 0,38 y 0,71, dramáticamente inferiores a las de las
+agencias de rating crediticio (superiores a 0,99). Descomponen la divergencia en tres
+fuentes: medición (56\,\%), alcance (38\,\%) y ponderación (6\,\%). Esta divergencia
+implica que los resultados sobre ESG y rendimientos son altamente sensibles a la agencia
+de rating utilizada. La elección de Refinitiv Eikon en el presente estudio constituye
+una limitación que debe tenerse en cuenta al comparar resultados con trabajos que emplean
+MSCI o Sustainalytics.
 
-Auer y Schuhmacher (2016) construyen carteras long-short basadas en puntuaciones
-ESG para el mercado europeo, encontrando que las diferencias de rendimiento no
-son estadísticamente significativas para la mayoría de industrias y subsegmentos.
+\subsection{Factores ESG en modelos multifactoriales}
 
-Nagy, Kassam y Lee (2016) utilizan datos de MSCI ESG Ratings para construir
-un factor ESG para el mercado global, encontrando que la integración ESG mejora
-el perfil riesgo-rendimiento de las carteras, aunque el efecto varía
-considerablemente entre regiones.
-
-Lioui y Tarelli (2022) demuestran que el factor ESG carga sobre los factores
-de FF3F (especialmente sobre MKT y HML), lo que sugiere que parte de la prima ESG
-puede ser redundante. Sin embargo, su carga sobre el factor $\alpha$ (alfas anormales)
-es significativa en algunos submercados.
-
-\subsection{Debate abierto: ¿prima positiva o negativa?}
-\label{subsec:lit_debate}
-
-El debate sobre el signo de la prima ESG no está cerrado. La evidencia puede
-sintetizarse de la siguiente manera:
-
-\begin{itemize}
-  \item \textbf{Prima ESG positiva} (High ESG $>$ Low ESG): consistente con la
-        hipótesis de que el buen desempeño ESG reduce el riesgo idiosincrático,
-        aumenta la calidad crediticia o genera externalidades positivas capturadas
-        en los beneficios a largo plazo.
-
-  \item \textbf{Prima ESG negativa} (Low ESG $>$ High ESG): consistente con la
-        hipótesis de que los inversores ESG aceptan menor rentabilidad financiera
-        como compensación por la utilidad no pecuniaria, o con la existencia de
-        una prima de exclusión para activos ``pecaminosos''.
-
-  \item \textbf{Prima ESG nula}: consistente con mercados eficientes donde la
-        información ESG ya está incorporada en precios, o con la heterogeneidad
-        de puntuaciones entre proveedores que dificulta la identificación empírica.
-\end{itemize}
-
-[\textit{Posicionar los resultados propios en este debate.}]
+La mayoría de estudios que añaden un factor ESG al FF3F o FF5F encuentran coeficientes
+no significativos estadísticamente o de magnitud modesta. La evidencia de Morningstar
+reporta que su factor ESG \textit{Better Minus Worse} generó un retorno de $-0{,}17\,\%$,
+no significativamente diferente de cero. Lioui y Tarelli (2022) demuestran que el
+factor ESG presenta alta correlación con HML y SMB, lo que sugiere solapamiento de
+información con los factores de Fama y French. La mejora marginal en R² es la
+constante empírica más robusta: el factor ESG añade entre 0,5 y 2 puntos porcentuales
+al R² ajustado medio, pero no reduce sistemáticamente los alfas de Jensen.
 
 % ═════════════════════════════════════════════════════════════════════════════
 \section{Metodología}
 \label{sec:metodologia}
 % ═════════════════════════════════════════════════════════════════════════════
 
-\subsection{El modelo de cuatro factores propuesto}
-\label{subsec:modelo}
+\subsection{Clasificación ESG y construcción del factor GMB}
 
-Siguiendo la lógica de Fama y French (1993), se propone un modelo de cuatro factores
-que incorpora un factor ESG:
+Las puntuaciones ESG de las 431 empresas de la muestra se obtienen de Refinitiv Eikon
+en marzo de 2026 y se mantienen constantes a lo largo del período de estudio (clasificación
+estática). En junio de cada año el modelo de Fama y French original reequilibra las carteras;
+en este trabajo se emplea una única clasificación para todo el período, lo que constituye
+una simplificación metodológica cuyas implicaciones se discuten en la Sección~\ref{sec:conclusiones}.
 
-\begin{equation}
-  \label{eq:ff4f}
-  R_{i,t} - R_{f,t} = \alpha_i + \beta_i \, \mathrm{MKT}_t
-    + s_i \, \mathrm{SMB}_t + h_i \, \mathrm{HML}_t
-    + e_i \, \mathrm{HEL}_t + \varepsilon_{i,t},
-\end{equation}
-
-donde $\mathrm{HEL}_t$ (\textit{High ESG minus Low ESG}) es el nuevo factor de
-sostenibilidad, y $e_i$ es su carga factorial para el activo $i$.
-
-Un coeficiente $e_i > 0$ indica que el activo se comporta como activos de alta
-puntuación ESG; $e_i < 0$ indica comportamiento similar a activos de baja puntuación ESG.
-
-El parámetro de interés central es el \textit{precio del factor HEL}: si el factor
-HEL tiene un rendimiento esperado significativamente distinto de cero, implica que
-los inversores exigen (o aceptan) una prima por exposición al riesgo ESG.
-
-\subsection{Construcción del factor HEL}
-\label{subsec:hel}
-
-La construcción del factor HEL sigue la metodología estándar de Fama y French:
-
-\paragraph{Clasificación ESG.}
-En cada período de rebalanceo, se ordenan las empresas de la muestra según su
-puntuación ESG [\textit{especificar fuente: MSCI, Sustainalytics, Bloomberg, etc.}].
-Se forman tres grupos: \textit{High} (H, percentil 0--[\textit{X}]\%), \textit{Medium} (M)
-y \textit{Low} (L, percentil [\textit{Y}]--100\%). [\textit{Describir puntos de corte usados.}]
-
-\paragraph{Clasificación por tamaño.}
-Simultáneamente, las empresas se dividen en dos grupos por capitalización bursátil:
-\textit{Small} (S) y \textit{Big} (B), usando la mediana como punto de corte.
-
-\paragraph{Carteras de intersección.}
-La intersección de las clasificaciones ESG y tamaño genera seis carteras:
-SH, SM, SL, BH, BM, BL. Cada cartera se pondera por capitalización bursátil (\textit{value-weighted}).
-
-\paragraph{Cálculo del factor HEL.}
-\begin{equation}
-  \label{eq:hel}
-  \mathrm{HEL}_t = \frac{1}{2}(R_{SH,t} + R_{BH,t})
-    - \frac{1}{2}(R_{SL,t} + R_{BL,t}).
-\end{equation}
-
-Este factor mide la rentabilidad diferencial de las empresas con alta puntuación ESG
-frente a las de baja puntuación, controlando por el efecto tamaño.
-
-\subsection{Estimación y contraste}
-\label{subsec:estimacion}
-
-Los modelos se estiman por \textit{Mínimos Cuadrados Ordinarios} (MCO) en series
-temporales para cada activo (o cartera) $i$:
-
-\begin{enumerate}
-  \item \textbf{Modelo CAPM} [ecuación~(\ref{eq:capm_ts})]: regresión del exceso de
-        rentabilidad sobre el factor de mercado.
-
-  \item \textbf{Modelo FF3F} [ecuación~(\ref{eq:ff3f})]: regresión sobre MKT, SMB y HML.
-
-  \item \textbf{Modelo FF4F-ESG} [ecuación~(\ref{eq:ff4f})]: regresión sobre MKT, SMB,
-        HML y HEL.
-\end{enumerate}
-
-Para evaluar la significatividad del factor ESG se utiliza el test $t$ del coeficiente
-$e_i$ con errores estándar robustos (Newey-West con [\textit{número} lags] para corregir
-autocorrelación y heterocedasticidad). Para comparar los modelos anidados se emplea
-el test $F$ de significatividad conjunta de los factores añadidos.
-
-La bondad de ajuste se mide mediante el $\bar{R}^2$ ajustado. La capacidad del
-modelo para explicar la sección transversal de rendimientos se evalúa mediante:
+Las empresas se dividen en tres grupos de igual tamaño (terciles) según su puntuación ESG:
 
 \begin{itemize}
-  \item Los alfas $\hat\alpha_i$: un modelo bien especificado debería producir alfas
-        estadísticamente no significativos.
-  \item El estadístico $GRS$ de Gibbons, Ross y Shanken (1989), que contrasta
-        conjuntamente la hipótesis $H_0: \alpha_1 = \cdots = \alpha_N = 0$.
+  \item \textbf{Brown} (bajo ESG): percentil 0--33. Rango: 2,79--66,60. Media: 55,25.
+  \item \textbf{Medium} (ESG intermedio): percentil 33--67. Rango: 66,76--76,08. Media: 71,63.
+  \item \textbf{Green} (alto ESG): percentil 67--100. Rango: 76,16--92,80. Media: 82,27.
 \end{itemize}
+
+Cada grupo contiene aproximadamente 143--144 empresas. Las carteras se construyen con
+ponderación equitativa (\textit{equally-weighted}) dentro de cada tercil, y su rentabilidad
+mensual se calcula como la media aritmética de las rentabilidades individuales de sus componentes.
+El factor GMB se calcula como:
+
+\begin{equation}
+  \mathrm{GMB}_t = R_{\text{Green},t} - R_{\text{Brown},t}.
+\end{equation}
+
+Nótese que, a diferencia de la metodología original de Fama y French (1993), este factor
+no incorpora una doble clasificación por tamaño y ESG, sino una clasificación simple por
+ESG. Esto simplifica la construcción pero puede introducir correlaciones con el factor SMB
+(las empresas con altas puntuaciones ESG tienden a ser grandes), cuestión que se aborda en
+la Sección~\ref{sec:resultados}.
+
+\subsection{Regresión de series temporales y estimación}
+
+El modelo de cuatro factores (ecuación~\ref{eq:ff4f}) se estima por Mínimos Cuadrados
+Ordinarios (MCO) para cada una de las 431 empresas de la muestra, con errores estándar
+HAC (Newey-West, 3 retardos) para corregir heterocedasticidad y autocorrelación de primer
+orden. Los factores MKT, SMB y HML para Europa se obtienen de la biblioteca de datos de
+Kenneth French (Dartmouth Tuck School). Las rentabilidades individuales se calculan
+como retornos totales mensuales (ajustados por dividendos) a partir de precios de Yahoo
+Finance (\texttt{yfinance}).
+
+Para evaluar la contribución del factor GMB, se comparan el modelo FF3F y el FF4F
+según los siguientes criterios: $\bar{R}^2$ ajustado medio y número de acciones con
+alfa estadísticamente significativo al 5\,\%.
+
+Adicionalmente, se realiza un análisis de \textit{descomposición de Shapley del R²} para
+una submuestra de 10 empresas no financieras del IBEX~35, que permite cuantificar la
+contribución marginal de cada factor al poder explicativo del modelo.
 
 % ═════════════════════════════════════════════════════════════════════════════
 \section{Datos}
 \label{sec:datos}
 % ═════════════════════════════════════════════════════════════════════════════
 
-\subsection{Muestra de empresas y período de análisis}
-\label{subsec:muestra}
+\subsection{Muestra de empresas}
 
-[\textit{Describir: número de empresas, mercado(s) analizado(s), período temporal,
-criterios de inclusión/exclusión (mínimo de datos disponibles, exclusión de sectores
-financieros si procede, etc.).}]
+El universo de partida es el STOXX Europe 600, índice que agrupa a las 600 empresas de
+mayor capitalización de 21 países europeos. Se excluyen de la muestra:
+\begin{enumerate}
+  \item Todos los componentes pertenecientes a los sectores financiero, bancario y de seguros,
+        por la dificultad de interpretar sus ratios contables en el marco Fama-French
+        (siguiendo la práctica habitual en la literatura, véase Fama y French, 1993).
+  \item Wise PLC y Zegona Communications (ZEG.L) por sus recientes OPI, que imposibilitaban
+        disponer de series históricas completas para el período de análisis; en el caso de
+        Zegona, además, su precio se quintuplicó en 2024 como consecuencia de la adquisición
+        de Vodafone España, lo que la convierte en un valor atípico extremo.
+\end{enumerate}
 
-La muestra está compuesta por [\textit{N}] empresas pertenecientes a
-[\textit{índice o universo, p.ej. IBEX 35, STOXX 600, S\&P 500}]
-durante el período [\textit{fecha inicio}]--[\textit{fecha fin}],
-con datos [\textit{frecuencia: mensual / semanal}].
-Se excluyen [\textit{criterios de exclusión}].
+La muestra final comprende \textbf{431 empresas} de \textbf{19 sectores} y \textbf{21 países}.
+Los diez países con mayor representación son: Reino Unido (83), Alemania (56), Francia (48),
+Suiza (42), Suecia (38), Italia (26), Países Bajos (25), Dinamarca (20), España (17)
+y Finlandia (15).
 
 \subsection{Datos de rentabilidades}
-\label{subsec:datos_rentabilidades}
 
-Los datos de precios de cierre ajustados provienen de
-[\textit{fuente: Yahoo Finance / Bloomberg / Refinitiv}].
-La rentabilidad simple del activo $i$ en el período $t$ se calcula como:
-\[
-  R_{i,t} = \frac{P_{i,t} - P_{i,t-1} + D_{i,t}}{P_{i,t-1}},
-\]
-donde $P_{i,t}$ es el precio ajustado y $D_{i,t}$ son los dividendos.
-Como tasa libre de riesgo se utiliza [\textit{especificar: Letras del Tesoro
-a 3 meses / Euribor / tasa de la Fed Funds}].
+Los precios de cierre ajustados (por dividendos y operaciones corporativas) se obtienen
+mensualmente de Yahoo Finance mediante la librería \texttt{yfinance}. Las rentabilidades
+simples se calculan como variaciones porcentuales del precio total ajustado. El período
+de análisis comprende de \textbf{enero de 2021 a diciembre de 2025}, lo que proporciona
+\textbf{59 observaciones} mensuales de rentabilidades (60 precios). Como tasa libre de
+riesgo se emplea el factor $R_f$ incluido en la base de datos de Kenneth French para Europa.
 
-Los factores MKT, SMB y HML provienen de
-[\textit{fuente: Kenneth French Data Library / elaboración propia}].
+Los factores $\mathrm{MKT}$, $\mathrm{SMB}$ y $\mathrm{HML}$ del mercado europeo
+se obtienen directamente de la \textit{Kenneth R. French Data Library} (Dartmouth Tuck
+School of Business), disponible de acceso libre en línea.
 
 \subsection{Puntuaciones ESG}
-\label{subsec:datos_esg}
 
-Las puntuaciones ESG se obtienen de [\textit{fuente: MSCI ESG Ratings /
-Sustainalytics / Bloomberg ESG Disclosure Score / Refinitiv ESG}].
-[\textit{Describir brevemente la metodología de la fuente y las características
-de las puntuaciones: rango, frecuencia de actualización, cobertura.}]
+Las puntuaciones ESG se obtienen de \textbf{Refinitiv Eikon} (LSEG) en marzo de 2026.
+El ESG Score de Refinitiv es una puntuación continua en el rango $[0,\,100]$, que integra
+más de 500 indicadores ESG agrupados en tres pilares (medioambiental, social y gobernanza).
+A diferencia de proveedores como Bloomberg (centrados en divulgación), Refinitiv evalúa
+tanto la divulgación como el desempeño comparado dentro del sector.
 
-Para evitar el sesgo de \textit{look-ahead}, las puntuaciones ESG de cada año $t$
-se asignan a partir de julio de $t+1$ (cuando están públicamente disponibles).
+Dado que únicamente se dispone de una observación por empresa (sin series históricas de
+puntuaciones ESG), se adopta el supuesto de \textit{ESG continuo}: la puntuación obtenida
+en marzo de 2026 se mantiene constante e invariante para clasificar las carteras durante
+todo el período 2021--2025. Este supuesto simplifica el análisis pero introduce un sesgo
+de \textit{look-ahead} (anticipación), ya que las puntuaciones de 2026 reflejan información
+posterior al período analizado. Esta es una limitación relevante que se discute en las
+conclusiones.
 
 \subsection{Estadísticos descriptivos}
-\label{subsec:estadisticos}
 
-El Cuadro~\ref{tab:descriptivos} presenta los estadísticos descriptivos de
-los factores y de los excesos de rentabilidad de las carteras.
+El Cuadro~\ref{tab:descriptivos} recoge los estadísticos descriptivos de los cuatro
+factores empleados en el modelo y de la tasa libre de riesgo.
 
 \begin{table}[H]
   \centering
-  \caption{Estadísticos descriptivos de los factores ([\textit{periodo}])}
+  \caption{Estadísticos descriptivos de los factores (enero 2021 -- diciembre 2025,
+  datos mensuales en \%)}
   \label{tab:descriptivos}
-  \begin{tabular}{lrrrrrrr}
+  \small
+  \begin{tabular}{lrrrrrrrr}
     \toprule
-    & Media & Mediana & Std. Dev. & Mín. & Máx. & Asimetría & Curtosis \\
+    & $N$ & Media & Std & Mín & Mediana & Máx & Sesgo & Curtosis \\
     \midrule
-    MKT     & \multicolumn{7}{c}{[\textit{rellenar con datos propios}]} \\
-    SMB     & & & & & & & \\
-    HML     & & & & & & & \\
-    HEL     & & & & & & & \\
-    $R_f$   & & & & & & & \\
+    MKT ($R_m - R_f$)  & 59 & $+0{,}616$ & $4{,}644$ & $-10{,}32$ & $+1{,}27$ & $+12{,}64$ & $-0{,}15$ & $-0{,}05$ \\
+    SMB                & 59 & $-0{,}556$ & $1{,}649$ & $-3{,}71$  & $-0{,}82$ & $+3{,}57$  & $+0{,}30$ & $-0{,}23$ \\
+    HML                & 59 & $+1{,}115$ & $2{,}933$ & $-6{,}14$  & $+1{,}20$ & $+12{,}09$ & $+0{,}47$ & $+2{,}81$ \\
+    GMB (Green$-$Brown) & 59 & $-0{,}149$ & $1{,}455$ & $-3{,}26$  & $+0{,}01$ & $+4{,}36$  & $+0{,}07$ & $+0{,}67$ \\
+    $R_f$              & 59 & $+0{,}264$ & $0{,}180$ & $+0{,}00$  & $+0{,}34$ & $+0{,}48$  & $-$       & $-$       \\
     \bottomrule
   \end{tabular}
   \begin{minipage}{\linewidth}
     \small\vspace{0.3em}
-    \textit{Nota:} Todos los valores en \%. [\textit{Frecuencia temporal.}]
-    El factor MKT es la prima de riesgo de mercado $(R_m - R_f)$.
-    HEL es el factor ESG construido siguiendo la metodología descrita
-    en la Sección~\ref{subsec:hel}.
+    \textit{Nota:} Todos los valores en \% mensual. MKT, SMB y HML son los factores de la
+    biblioteca de Kenneth French para Europa. GMB = \textit{Green Minus Brown}. El test de
+    medias ($H_0:\mu=0$) es significativo al 5\,\% para SMB ($t=-2{,}59$, $p=0{,}012$)
+    y al 1\,\% para HML ($t=+2{,}92$, $p=0{,}005$), pero no para GMB ($t=-0{,}78$, $p=0{,}436$)
+    ni para MKT ($t=+1{,}02$, $p=0{,}313$).
+  \end{minipage}
+\end{table}
+
+El Cuadro~\ref{tab:carteras} resume las características de las tres carteras de terciles.
+
+\begin{table}[H]
+  \centering
+  \caption{Estadísticos de las carteras por tercil ESG (2021--2025)}
+  \label{tab:carteras}
+  \begin{tabular}{lcccc}
+    \toprule
+    & Brown (bajo ESG) & Medium & Green (alto ESG) \\
+    \midrule
+    N empresas          & 144    & 143    & 144    \\
+    Rango ESG score     & 2,79--66,60 & 66,76--76,08 & 76,16--92,80 \\
+    Media ESG score     & 55,25  & 71,63  & 82,27  \\
+    \midrule
+    Rent. media mensual (\%)  & $+1{,}062$ & $+0{,}894$ & $+0{,}914$ \\
+    Rent. anualizada (\%)     & $+13{,}52$ & $+11{,}26$ & $+11{,}53$ \\
+    Volatilidad anual (\%)    & $+13{,}16$ & $+12{,}94$ & $+12{,}92$ \\
+    Sharpe ratio              & $0{,}732$  & $0{,}588$  & $0{,}608$  \\
+    \bottomrule
+  \end{tabular}
+  \begin{minipage}{\linewidth}
+    \small\vspace{0.3em}
+    \textit{Nota:} Carteras de ponderación equitativa. Sharpe calculado con $R_f$ mensual
+    media de $0{,}264\,\%$ ($3{,}21\,\%$ anualizado).
+  \end{minipage}
+\end{table}
+
+La Figura~\ref{fig:hel_evolucion} muestra la evolución acumulada del factor GMB
+(panel superior) y de las tres carteras de terciles con base 100 en enero de 2021
+(panel inferior).
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.85\textwidth]{../figures/01_factor_ESG_evolucion.png}
+  \caption{Rentabilidad acumulada del factor GMB (\textit{Green Minus Brown}) y de las
+  carteras por tercil ESG (base 100 = enero 2021). Período: enero 2021--diciembre 2025.}
+  \label{fig:hel_evolucion}
+\end{figure}
+
+El factor GMB acumula una rentabilidad negativa de aproximadamente $-14\,\%$ en el
+período, reflejo de que las carteras Brown superaron sistemáticamente a las Green,
+especialmente a partir de 2022, cuando el inicio de la guerra de Ucrania impulsó las
+cotizaciones del sector energético fósil y de defensa ---sectores con baja puntuación ESG.
+
+El Cuadro~\ref{tab:correlaciones} presenta la matriz de correlaciones entre factores.
+
+\begin{table}[H]
+  \centering
+  \caption{Matriz de correlaciones entre factores (enero 2021 -- diciembre 2025)}
+  \label{tab:correlaciones}
+  \begin{tabular}{lcccc}
+    \toprule
+                        & MKT    & SMB    & HML    & GMB    \\
+    \midrule
+    MKT                 & 1{,}000 &        &        &        \\
+    SMB                 & $+0{,}132$ & 1{,}000 &        &       \\
+    HML                 & $-0{,}194$ & $-0{,}124$ & 1{,}000 &    \\
+    GMB (\textit{Green}$-$\textit{Brown}) & $-0{,}071$ & $-0{,}450$ & $+0{,}689$ & 1{,}000 \\
+    \bottomrule
+  \end{tabular}
+  \begin{minipage}{\linewidth}
+    \small\vspace{0.3em}
+    \textit{Nota:} La correlación de GMB con HML ($+0{,}69$) indica que las empresas
+    con alta puntuación ESG se comportan de forma similar a las empresas de valor
+    (\textit{high book-to-market}) en este período. La correlación con SMB ($-0{,}45$)
+    refleja que las empresas de alto ESG tienden a ser de gran capitalización.
   \end{minipage}
 \end{table}
 
@@ -569,172 +558,393 @@ los factores y de los excesos de rentabilidad de las carteras.
 \label{sec:resultados}
 % ═════════════════════════════════════════════════════════════════════════════
 
-\subsection{Evolución temporal del factor HEL}
-\label{subsec:hel_evolucion}
+\subsection{La prima del factor GMB}
 
-[\textit{Describir la evolución temporal del factor HEL. Incluir gráfico.}]
+El factor GMB presenta una prima media mensual de $-0{,}149\,\%$ ($-1{,}77\,\%$
+anualizado), con una desviación estándar mensual de $1{,}455\,\%$ y un ratio de Sharpe
+anualizado de $-0{,}354$. El test de medias no rechaza la hipótesis nula de prima cero
+($t = -0{,}784$, $p = 0{,}436$): la diferencia de rentabilidad entre las carteras Green y
+Brown no es estadísticamente significativa en el período analizado.
 
-La Figura~\ref{fig:hel_evolucion} muestra la evolución del factor HEL acumulado
-durante el período de estudio.
+En términos de rentabilidad bruta, la cartera Brown obtuvo un $13{,}52\,\%$ anualizado
+frente al $11{,}53\,\%$ de la cartera Green, una brecha de $1{,}99$ puntos porcentuales
+que no supera el umbral de significatividad estadística dado el reducido número de
+observaciones (59 meses).
 
-\begin{figure}[H]
-  \centering
-  % \includegraphics[width=0.85\textwidth]{../figures/hel_evolucion.png}
-  \fbox{\parbox{0.85\textwidth}{\centering\vspace{3em}[Figura: Evolución del factor HEL acumulado]\vspace{3em}}}
-  \caption{Rentabilidad acumulada del factor HEL (\textit{High ESG minus Low ESG}).}
-  \label{fig:hel_evolucion}
-\end{figure}
+\subsection{Regresión del modelo de tres factores (FF3F)}
 
-[\textit{Análisis descriptivo: ¿El factor HEL es positivo o negativo en el período?
-¿Cuál es su prima media anualizada? ¿Hay subperíodos de signo diferente?}]
-
-\subsection{Estimación del modelo CAPM}
-\label{subsec:res_capm}
-
-[\textit{Presentar resultados de la regresión CAPM para las carteras o activos analizados.}]
-
-\subsection{Estimación del modelo Fama-French de tres factores}
-\label{subsec:res_ff3f}
-
-[\textit{Presentar resultados del modelo FF3F.}]
-
-El Cuadro~\ref{tab:ff3f} recoge las estimaciones MCO del modelo FF3F para las
-carteras analizadas.
+La estimación del modelo FF3F sobre las 431 series individuales de exceso de rentabilidad
+arroja los resultados resumidos en el Cuadro~\ref{tab:ff3f_resumen}.
 
 \begin{table}[H]
   \centering
-  \caption{Estimación del modelo Fama-French de tres factores}
-  \label{tab:ff3f}
-  \begin{tabular}{lcccccc}
+  \caption{Resumen de resultados del modelo FF3F (431 acciones)}
+  \label{tab:ff3f_resumen}
+  \begin{tabular}{lc}
     \toprule
-    Cartera & $\hat\alpha$ & $\hat\beta$ & $\hat{s}$ & $\hat{h}$ & $\bar{R}^2$ & $N$ \\
+    Estadístico & FF3F \\
     \midrule
-    [\textit{Cartera 1}] & & & & & & \\
-    [\textit{Cartera 2}] & & & & & & \\
-    [\textit{...}]       & & & & & & \\
+    $\hat\alpha$ medio (mensual, \%) & $+0{,}377$ \\
+    $\hat\beta$ (MKT) medio          & $+0{,}686$ \\
+    $\bar{R}^2$ ajustado medio       & $0{,}2242$  \\
+    Acciones con $\hat\alpha$ sig.\ ($p<0{,}05$) & 64 (14{,}8\,\%) \\
+    \quad de las cuales, $\hat\alpha>0$ & 60 \\
+    \quad de las cuales, $\hat\alpha<0$ & 4  \\
+    Acciones con $\hat\beta$ sig.\ ($p<0{,}05$) & 351 (81{,}4\,\%) \\
+    Acciones con $\hat{s}$ sig.\ ($p<0{,}05$)   & 76 (17{,}6\,\%)  \\
+    Acciones con $\hat{h}$ sig.\ ($p<0{,}05$)   & 132 (30{,}6\,\%) \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+El factor de mercado MKT es el predictor dominante: el 81,4\,\% de las acciones presentan
+beta significativa. La carga en SMB es significativa para el 17,6\,\% de las acciones, y
+la de HML para el 30,6\,\%. El alfa medio positivo ($+0{,}377\,\%$/mes) indica que el
+FF3F sistemáticamente infravalora los rendimientos medios de la muestra europea en este período,
+lo que sugiere que algún factor adicional podría mejorar la especificación del modelo.
+
+\subsection{Regresión del modelo de cuatro factores (FF4F-ESG)}
+
+La incorporación del factor GMB al modelo FF3F produce los resultados del
+Cuadro~\ref{tab:ff4f_resumen}.
+
+\begin{table}[H]
+  \centering
+  \caption{Resumen de resultados del modelo FF4F-ESG (431 acciones)}
+  \label{tab:ff4f_resumen}
+  \begin{tabular}{lcc}
+    \toprule
+    Estadístico & FF3F & FF4F-ESG \\
+    \midrule
+    $\hat\alpha$ medio (mensual, \%) & $+0{,}377$ & $+0{,}728$ \\
+    $\hat\beta$ (MKT) medio          & $+0{,}686$ & $+0{,}686$ \\
+    $\hat{s}$ (SMB) medio            & $-$        & $+0{,}221$ \\
+    $\hat{h}$ (HML) medio            & $-$        & $-0{,}238$ \\
+    $\hat{e}$ (GMB) medio            & $-$        & $+0{,}490$ \\
+    $\bar{R}^2$ ajustado medio       & $0{,}2242$  & $0{,}2339$ \\
+    $\Delta\bar{R}^2$                & $-$         & $+0{,}0097$ \\
+    Acciones con $\hat\alpha$ sig.\ ($p<0{,}05$) & 64 (14{,}8\,\%) & 56 (13{,}0\,\%) \\
+    Acciones con $\hat{e}$ sig.\ ($p<0{,}05$)   & $-$              & 81 (18{,}8\,\%) \\
+    \quad $\hat{e}>0$ y sig. & $-$ & 66 (15{,}3\,\%) \\
+    \quad $\hat{e}<0$ y sig. & $-$ & 15 (3{,}5\,\%)  \\
+    Acciones con $\hat{e}>0$ (sin exigir sig.)   & $-$ & 281 (65{,}2\,\%) \\
     \bottomrule
   \end{tabular}
   \begin{minipage}{\linewidth}
     \small\vspace{0.3em}
-    \textit{Nota:} Errores estándar Newey-West entre paréntesis.
-    $^{*}p<0.10$, $^{**}p<0.05$, $^{***}p<0.01$.
+    \textit{Nota:} Errores estándar HAC Newey-West (3 retardos) para todas las regresiones.
+    Los coeficientes medios son promedios simples de los 431 estimadores individuales.
+    El test de medias del coeficiente $\hat{e}$ es $t = +7{,}23$, $p < 0{,}001$
+    (altamente significativo en sección transversal).
   \end{minipage}
 \end{table}
 
-\subsection{Estimación del modelo de cuatro factores con el factor ESG}
-\label{subsec:res_ff4f}
+Varios resultados merecen atención. Primero, el $\bar{R}^2$ ajustado medio aumenta
+$+0{,}97$ puntos porcentuales con la adición del factor GMB, y el número de acciones con
+alfa significativo cae de 64 a 56 (reducción de 1,8 puntos porcentuales). Estos dos
+indicadores son coherentes con la hipótesis de que el factor GMB captura variación
+sistemática en los rendimientos que el modelo FF3F no explicaba.
 
-[\textit{Este es el resultado central del trabajo. Presentar y discutir.}]
+Segundo, el $\hat\alpha$ medio \textit{aumenta} al pasar de FF3F a FF4F-ESG (de $+0{,}377$
+a $+0{,}728\,\%$/mes). Este resultado aparentemente contradictorio se explica porque el
+factor GMB tiene una prima media negativa ($-0{,}149\,\%$/mes) y la carga factorial
+promedio es positiva ($\hat{e}=+0{,}490$): el modelo de cuatro factores predice un
+componente de rentabilidad de $+0{,}490 \times (-0{,}149\,\%) \approx -0{,}073\,\%$/mes
+atribuible al factor ESG, que debe ser absorbido por un alfa mayor para cerrar el ajuste.
 
-El Cuadro~\ref{tab:ff4f} recoge los resultados de la estimación del modelo
-de cuatro factores (FF4F-ESG).
+Tercero, el coeficiente $\hat{e}$ medio en sección transversal es positivo y altamente
+significativo ($\bar{e}=+0{,}490$, $t=+7{,}23$, $p<0{,}001$). Esto confirma que el factor
+GMB discrimina sistemáticamente entre acciones en función de su exposición al riesgo ESG,
+pero solo el 15,3\,\% de las acciones presentan carga positiva individualmente significativa.
 
-\begin{table}[H]
-  \centering
-  \caption{Estimación del modelo de cuatro factores FF4F-ESG}
-  \label{tab:ff4f}
-  \begin{tabular}{lccccccc}
-    \toprule
-    Cartera & $\hat\alpha$ & $\hat\beta$ & $\hat{s}$ & $\hat{h}$ & $\hat{e}$ (HEL) & $\bar{R}^2$ & $N$ \\
-    \midrule
-    [\textit{Cartera 1}] & & & & & & & \\
-    [\textit{Cartera 2}] & & & & & & & \\
-    [\textit{...}]       & & & & & & & \\
-    \midrule
-    \textbf{HEL (factor)} & & & & & & & \\
-    \bottomrule
-  \end{tabular}
-  \begin{minipage}{\linewidth}
-    \small\vspace{0.3em}
-    \textit{Nota:} Errores estándar Newey-West entre paréntesis.
-    $^{*}p<0.10$, $^{**}p<0.05$, $^{***}p<0.01$.
-    HEL = \textit{High ESG minus Low ESG}.
-  \end{minipage}
-\end{table}
+\subsection{Resultados por tercil ESG}
 
-[\textit{Interpretar: ¿Es $\hat{e}$ significativo? ¿Cuál es su signo?
-¿Mejora el $\bar{R}^2$ con respecto al FF3F? ¿Se reducen los alfas?}]
-
-\subsection{Comparación de modelos y test GRS}
-\label{subsec:comparacion}
-
-[\textit{Comparar los tres modelos (CAPM, FF3F, FF4F-ESG) usando $\bar{R}^2$,
-criterios AIC/BIC y el test GRS.}]
-
-El Cuadro~\ref{tab:comparacion} resume los criterios de comparación entre modelos.
+El Cuadro~\ref{tab:ff4f_terciles} desglosa los coeficientes medios del modelo FF4F-ESG
+por cartera de tercil.
 
 \begin{table}[H]
   \centering
-  \caption{Comparación de modelos}
-  \label{tab:comparacion}
+  \caption{Coeficientes medios del modelo FF4F-ESG por tercil ESG}
+  \label{tab:ff4f_terciles}
   \begin{tabular}{lcccc}
     \toprule
-    & CAPM & FF3F & FF4F-ESG \\
+    & Brown (144) & Medium (143) & Green (144) & Total (431) \\
     \midrule
-    $\bar{R}^2$ medio   & & & \\
-    $|\hat\alpha|$ medio & & & \\
-    GRS $F$-stat        & & & \\
-    GRS $p$-value       & & & \\
-    AIC medio           & & & \\
+    $\hat\alpha$ (\%/mes) & $+0{,}701$ & $+0{,}760$ & $+0{,}724$ & $+0{,}728$ \\
+    $\hat\beta$ (MKT)     & $+0{,}688$ & $+0{,}682$ & $+0{,}688$ & $+0{,}686$ \\
+    $\hat{s}$ (SMB)       & $+0{,}178$ & $+0{,}302$ & $+0{,}184$ & $+0{,}221$ \\
+    $\hat{h}$ (HML)       & $-0{,}219$ & $-0{,}266$ & $-0{,}229$ & $-0{,}238$ \\
+    $\hat{e}$ (GMB)       & $-0{,}037$ & $+0{,}563$ & $+0{,}946$ & $+0{,}490$ \\
+    $\bar{R}^2$           & $0{,}217$  & $0{,}236$  & $0{,}249$  & $0{,}234$  \\
+    $\hat{e}$ sig. (5\,\%) & 18 (12{,}5\,\%) & 23 (16{,}1\,\%) & 40 (27{,}8\,\%) & 81 (18{,}8\,\%) \\
+    \quad $\hat{e}>0$, sig. & 10 & 20 & 36 & 66 \\
+    \quad $\hat{e}<0$, sig. & 8  & 3  & 4  & 15 \\
+    \bottomrule
+  \end{tabular}
+  \begin{minipage}{\linewidth}
+    \small\vspace{0.3em}
+    \textit{Nota:} La diferencia en $\hat{e}$ entre Green y Brown ($+0{,}946-(-0{,}037)=+0{,}983$)
+    es estadísticamente significativa ($t=+6{,}03$, $p<0{,}001$), lo que confirma que el factor GMB
+    discrimina correctamente entre carteras de diferente nivel ESG.
+  \end{minipage}
+\end{table}
+
+El gradiente en el coeficiente $\hat{e}$: $-0{,}037$ (Brown) $\to$ $+0{,}563$ (Medium) $\to$
+$+0{,}946$ (Green), es coherente con la construcción del factor: las acciones verdes tienen
+la mayor exposición al factor GMB (covarian positivamente con él), mientras que las acciones
+marrones tienen una exposición prácticamente nula o ligeramente negativa. El $\bar{R}^2$ también
+aumenta con el ESG del tercil, sugiriendo que el factor explica mejor los rendimientos de
+las empresas más comprometidas con la sostenibilidad.
+
+\subsection{Ejemplo individual: TotalEnergies (TTE.PA)}
+
+El Cuadro~\ref{tab:tte} presenta los resultados de la regresión FF4F-ESG para TotalEnergies,
+empresa del sector de energía fósil incluida en el tercil Medium (ESG Score: 72,78).
+
+\begin{table}[H]
+  \centering
+  \caption{Estimación FF4F-ESG para TotalEnergies SE (TTE.PA)}
+  \label{tab:tte}
+  \begin{tabular}{lrrrrc}
+    \toprule
+    Coeficiente & Estimación & Err.\ Std & $z$-stat & $p$-valor & IC 95\,\% \\
+    \midrule
+    $\hat\alpha$ (constante) & $-0{,}0006$ & $0{,}007$ & $-0{,}079$ & $0{,}937$ & $[-0{,}014,\,+0{,}013]$ \\
+    $\hat\beta$ (MKT)        & $+0{,}4285$ & $0{,}144$ & $+2{,}979$ & $0{,}003$** & $[+0{,}147,\,+0{,}710]$ \\
+    $\hat{s}$ (SMB)          & $-0{,}3405$ & $0{,}279$ & $-1{,}220$ & $0{,}222$   & $[-0{,}887,\,+0{,}206]$ \\
+    $\hat{h}$ (HML)          & $+0{,}9314$ & $0{,}255$ & $+3{,}648$ & $0{,}000$*** & $[+0{,}431,\,+1{,}432]$ \\
+    $\hat{e}$ (GMB)          & $+1{,}3158$ & $0{,}602$ & $+2{,}185$ & $0{,}029$*  & $[+0{,}136,\,+2{,}496]$ \\
+    \midrule
+    $R^2$          & \multicolumn{5}{l}{$0{,}520$} \\
+    $\bar{R}^2$    & \multicolumn{5}{l}{$0{,}485$} \\
+    $N$            & \multicolumn{5}{l}{59} \\
+    Durbin-Watson  & \multicolumn{5}{l}{1{,}732} \\
+    Jarque-Bera ($p$) & \multicolumn{5}{l}{$0{,}744$ (normalidad no rechazada)} \\
+    \bottomrule
+  \end{tabular}
+  \begin{minipage}{\linewidth}
+    \small\vspace{0.3em}
+    $^{*}p<0{,}05$, $^{**}p<0{,}01$, $^{***}p<0{,}001$.
+    Errores estándar HAC Newey-West (3 retardos).
+    El alfa no significativo ($p=0{,}937$) indica que el modelo de cuatro factores
+    explica bien la rentabilidad de TotalEnergies. La fuerte carga en HML ($\hat{h}=+0{,}93$)
+    confirma su carácter de empresa de valor; la carga ESG significativa ($\hat{e}=+1{,}32$)
+    indica que TotalEnergies covaria positivamente con las acciones verdes pese a pertenecer
+    al sector de energía fósil.
+  \end{minipage}
+\end{table}
+
+\subsection{Análisis sectorial}
+
+El Cuadro~\ref{tab:sectores} recoge los coeficientes $\hat{e}$ medios por sector (para los
+sectores con al menos 8 empresas en la muestra).
+
+\begin{table}[H]
+  \centering
+  \caption{Carga factorial ESG media por sector}
+  \label{tab:sectores}
+  \small
+  \begin{tabular}{lrrrr}
+    \toprule
+    Sector & $n$ & $\bar{\hat{e}}$ (GMB) & $\bar{\hat\alpha}$ (\%/mes) & ESG medio \\
+    \midrule
+    Automóviles y componentes       & 14 & $+2{,}08$ & $+0{,}53$ & 69,25 \\
+    Transporte                      & 16 & $+1{,}53$ & $+1{,}21$ & 66,91 \\
+    Equipos tecnológicos            & 14 & $+1{,}41$ & $+2{,}31$ & 69,24 \\
+    Servicios al consumo cíclico    & 17 & $+1{,}06$ & $+0{,}93$ & 69,11 \\
+    Farmacéutico e inv.\ médica     & 29 & $+0{,}94$ & $+1{,}85$ & 73,45 \\
+    Productos consumo cíclico       & 25 & $+0{,}90$ & $+0{,}68$ & 67,80 \\
+    Servicios y equipos sanit.      & 18 & $+0{,}71$ & $+0{,}68$ & 73,57 \\
+    Distribución minorista          & 12 & $+0{,}64$ & $+0{,}29$ & 65,50 \\
+    Energía --- Combustibles fósiles & 24 & $+0{,}60$ & $+0{,}24$ & 72,96 \\
+    Alimentos y bebidas             & 25 & $+0{,}53$ & $+0{,}29$ & 71,14 \\
+    Servicios industriales          & 36 & $+0{,}45$ & $+0{,}98$ & 70,54 \\
+    Bienes industriales             & 63 & $+0{,}38$ & $+1{,}33$ & 68,30 \\
+    Química                         & 21 & $+0{,}35$ & $-0{,}40$ & 70,76 \\
+    Recursos minerales              & 22 & $+0{,}05$ & $+0{,}26$ & 71,65 \\
+    Alimentación y distribución     & 9  & $+0{,}04$ & $+0{,}74$ & 69,97 \\
+    Utilities (electricidad, agua)  & 27 & $-0{,}43$ & $+0{,}22$ & 69,85 \\
+    Telecomunicaciones              & 16 & $-0{,}55$ & $-0{,}34$ & 70,24 \\
+    Software y servicios TI         & 21 & $-0{,}63$ & $+0{,}24$ & 63,68 \\
     \bottomrule
   \end{tabular}
 \end{table}
 
-\subsection{Análisis de robustez}
-\label{subsec:robustez}
+El sector de automóviles y componentes registra la mayor carga ESG positiva ($\hat{e}=+2{,}08$),
+seguido por transporte y equipos tecnológicos. En el extremo opuesto, los sectores de
+software y TI, telecomunicaciones y utilities presentan cargas negativas, lo que indica
+que en estos sectores las empresas de bajo ESG obtuvieron rendimientos superiores a los
+que el factor GMB habría predicho.
 
-[\textit{Describir los tests de robustez realizados:
-¿subperíodos? ¿diferentes puntos de corte ESG? ¿diferentes fuentes de datos?
-¿ponderación igual vs. por capitalización?}]
+La dominancia de empresas de defensa en la cola anti-ESG es un hallazgo destacable.
+Rheinmetall AG ($\hat{e}=-5{,}15$), Hensoldt AG ($\hat{e}=-4{,}93$), Saab AB
+($\hat{e}=-4{,}93$), Thales SA ($\hat{e}=-3{,}23$) y Kongsberg Gruppen ($\hat{e}=-2{,}65$)
+son las cinco acciones con mayor carga factorial ESG negativa, todas del sector de defensa.
+Este resultado refleja el extraordinario comportamiento bursátil del sector de defensa
+europeo durante 2022--2025, impulsado por el rearme derivado de la invasión de Ucrania.
+Estas empresas pertenecen al tercil Brown (bajo ESG), lo que amplifica su impacto en el
+rendimiento del factor GMB.
+
+\subsection{Descomposición de Shapley del R² (IBEX~35)}
+
+El Cuadro~\ref{tab:shapley} presenta la descomposición de Shapley del R² para diez
+empresas no financieras del IBEX~35, que permite atribuir la contribución de cada factor
+al poder explicativo total del modelo de forma que las aportaciones sumen exactamente el
+$R^2$ total.
+
+\begin{table}[H]
+  \centering
+  \caption{Descomposición de Shapley del $R^2$ (FF4F-ESG, selección IBEX~35)}
+  \label{tab:shapley}
+  \small
+  \begin{tabular}{lrrrrr|r}
+    \toprule
+    Empresa & $R^2$ total & MKT & SMB & HML & GMB & GMB\,\% \\
+    \midrule
+    Inditex       & 0{,}350 & 0{,}296 & 0{,}032 & 0{,}010 & 0{,}013 &  3{,}8\,\% \\
+    Iberdrola     & 0{,}270 & 0{,}255 & 0{,}003 & 0{,}005 & 0{,}006 &  2{,}4\,\% \\
+    Cellnex       & 0{,}513 & 0{,}358 & 0{,}024 & 0{,}084 & 0{,}047 &  9{,}1\,\% \\
+    Amadeus IT    & 0{,}243 & 0{,}202 & 0{,}006 & 0{,}012 & 0{,}022 &  9{,}1\,\% \\
+    Endesa        & 0{,}290 & 0{,}275 & 0{,}003 & 0{,}007 & 0{,}006 &  1{,}9\,\% \\
+    Aena          & 0{,}367 & 0{,}324 & 0{,}002 & 0{,}022 & 0{,}019 &  5{,}2\,\% \\
+    Telefónica    & 0{,}127 & 0{,}065 & 0{,}002 & 0{,}051 & 0{,}010 &  7{,}6\,\% \\
+    Repsol        & 0{,}381 & 0{,}016 & 0{,}011 & 0{,}169 & \textbf{0{,}186} & \textbf{48{,}9\,\%} \\
+    Naturgy       & 0{,}191 & 0{,}114 & 0{,}031 & 0{,}010 & 0{,}036 & 18{,}8\,\% \\
+    ACS           & 0{,}180 & 0{,}122 & 0{,}011 & 0{,}025 & 0{,}022 & 12{,}0\,\% \\
+    \midrule
+    \textbf{Media} & & 0{,}203 & 0{,}013 & 0{,}039 & 0{,}037 & \textbf{11{,}9\,\%} \\
+    \bottomrule
+  \end{tabular}
+  \begin{minipage}{\linewidth}
+    \small\vspace{0.3em}
+    \textit{Nota:} Las cifras en las columnas de factores son las contribuciones de Shapley
+    al $R^2$ total. Para Repsol, el factor GMB es el mayor contribuyente individual
+    ($48{,}9\,\%$), explicado por la alta correlación de Repsol con el factor valor-ESG en
+    este período. La media de la columna GMB es $11{,}9\,\%$ del $R^2$ total.
+  \end{minipage}
+\end{table}
+
+En promedio, el factor GMB contribuye el 11{,}9\,\% del $R^2$ explicado en la muestra
+del IBEX~35, lo que no es trivial: el factor SMB contribuye el 4{,}6\,\% y el HML el
+13{,}8\,\% en esa misma submuestra. Sin embargo, la heterogeneidad es muy elevada:
+desde el 1{,}9\,\% (Endesa) hasta el 48{,}9\,\% (Repsol).
 
 % ═════════════════════════════════════════════════════════════════════════════
 \section{Conclusiones}
 \label{sec:conclusiones}
 % ═════════════════════════════════════════════════════════════════════════════
 
-[\textit{Resumir hallazgos principales, implicaciones y limitaciones.}]
+Este trabajo ha investigado si la sostenibilidad corporativa, medida por las puntuaciones
+ESG de Refinitiv Eikon, genera una prima de riesgo estadísticamente significativa en el
+mercado europeo, incorporando un factor GMB (\textit{Green Minus Brown}) al modelo de
+Fama y French de tres factores. El análisis cubre 431 empresas del STOXX Europe 600
+durante el período enero 2021--diciembre 2025 (59 observaciones mensuales). Las principales
+conclusiones son las siguientes:
 
-Este trabajo ha investigado si los criterios ESG generan una prima de riesgo
-estadísticamente significativa en el mercado [\textit{especificar}], incorporando
-un factor HEL al modelo de tres factores de Fama y French (1993).
+\paragraph{1. La prima del factor GMB es negativa y no significativa.}
+Las empresas de bajo ESG (cartera Brown) superaron a las de alto ESG (cartera Green) en
+rentabilidad anualizada ($13{,}52\,\%$ frente a $11{,}53\,\%$), resultando en una prima
+GMB de $-1{,}77\,\%$ anualizado. Sin embargo, esta diferencia no es estadísticamente
+significativa ($t=-0{,}784$, $p=0{,}436$). No se puede rechazar la hipótesis nula de prima
+ESG igual a cero en el período analizado.
 
-Los principales hallazgos son los siguientes:
+\paragraph{2. El factor GMB discrimina en sección transversal.}
+A nivel de activo individual, el coeficiente $\hat{e}$ es positivo y altamente significativo
+en sección transversal ($\bar{e}=+0{,}490$, $t=+7{,}23$, $p<0{,}001$), con un gradiente
+claro entre terciles: Brown ($\bar{e}=-0{,}037$) $\to$ Medium ($+0{,}563$) $\to$ Green
+($+0{,}946$). El factor identifica correctamente la exposición ESG de las carteras, aunque
+solo el 15{,}3\,\% de los activos presentan carga ESG individualmente significativa.
 
-\begin{enumerate}
-  \item [\textit{Hallazgo 1: significatividad del factor HEL.}]
-  \item [\textit{Hallazgo 2: dirección del efecto (prima positiva/negativa/nula).}]
-  \item [\textit{Hallazgo 3: mejora del ajuste del modelo.}]
-  \item [\textit{Hallazgo 4: robustez.}]
-\end{enumerate}
+\paragraph{3. Mejora marginal del ajuste del modelo.}
+La adición del factor GMB eleva el $\bar{R}^2$ medio de $0{,}224$ a $0{,}234$ (+0{,}97~pp)
+y reduce el número de acciones con alfa significativo de 64 (14{,}8\,\%) a 56 (13{,}0\,\%).
+Estos resultados son coherentes con la existencia de variación sistemática captada por el factor,
+pero el tamaño del efecto es modesto, en línea con la literatura que encuentra mejoras
+marginales al añadir el factor ESG al modelo Fama-French.
 
-Estos resultados son [\textit{consistentes / inconsistentes}] con la hipótesis de
-Pástor, Stambaugh y Taylor (2021, 2022) de que los inversores con preferencias
-ESG aceptan menores rendimientos financieros, y con la hipótesis de exclusión
-de Hong y Kacperczyk (2009).
+\paragraph{4. El shock geopolítico de defensa domina el período.}
+Las empresas de defensa europea (Rheinmetall, Hensoldt, Saab, Thales, Kongsberg) presentan
+las cargas $\hat{e}$ más negativas, consecuencia de su extraordinario comportamiento bursátil
+durante el rearmamento europeo post-2022. Dado que pertenecen al tercil Brown, su rendimiento
+superior presiona a la baja el factor GMB. Este es un factor contextual que distorsiona la
+interpretación de la prima ESG para el período analizado.
 
-Las principales limitaciones del trabajo son: [\textit{tamaño de muestra,
-disponibilidad de datos ESG, período relativamente corto, posible sesgo de
-supervivencia, heterogeneidad en puntuaciones ESG entre proveedores.}]
+\paragraph{5. Alta correlación GMB-HML como advertencia metodológica.}
+La correlación entre el factor GMB y HML es de $+0{,}689$, lo que indica un solapamiento
+sustancial de información: las empresas de alto ESG se comportan de forma similar a las
+empresas de valor en este período. Esta correlación, ya advertida por Lioui y Tarelli (2022),
+puede deberse a que el sector energético fósil (bajo ESG) actúa como proxy de empresas de
+crecimiento durante la transición energética, mientras que las empresas de alto ESG adoptan
+perfiles de valor. Este solapamiento reduce la ortogonalidad del factor ESG respecto a los
+factores existentes.
 
-Como líneas de investigación futuras se propone: [\textit{ampliar el período,
-comparar entre mercados, usar distintas fuentes ESG, incorporar el factor
-momentum.}]
+\paragraph{6. Consistencia con el marco teórico de Pástor, Stambaugh y Taylor.}
+Los resultados son coherentes con la hipótesis de PST (2021, 2022): en el período
+2021--2025, la demanda de activos ESG no creció con la misma intensidad que en 2010--2020
+---el shock geopolítico de 2022 invirtió las preferencias relativas--- y las acciones
+\textit{brown} recuperaron terreno. Esto es consistente con la predicción del modelo de
+que las acciones verdes tienen menores rendimientos esperados en equilibrio y pueden
+obtener rendimientos realizados inferiores cuando los shocks de demanda son adversos.
+
+\paragraph{Limitaciones principales.}
+El presente trabajo presenta cuatro limitaciones relevantes. Primero, el supuesto de ESG
+continuo (puntuación estática de 2026 para todo el período) introduce un sesgo de
+\textit{look-ahead} que puede distorsionar la clasificación de algunas empresas para años
+anteriores. Segundo, el reducido número de observaciones (59 meses) limita la potencia
+estadística para detectar primas pequeñas pero económicamente relevantes. Tercero, la
+construcción del factor GMB no realiza doble clasificación por tamaño y ESG como haría una
+réplica estricta de Fama y French (1993), y las carteras son ponderadas equitativamente en
+lugar de por capitalización, lo que aleja la metodología del estándar de la literatura.
+Cuarto, los resultados son específicos del proveedor Refinitiv Eikon; Berg, Kölbel y Rigobon
+(2022) documentan que los resultados con MSCI o Sustainalytics pueden diferir sustancialmente.
+
+\paragraph{Líneas de investigación futuras.}
+Como extensiones naturales se propone: (i) ampliar el período de análisis a 2010--2025 para
+comparar la prima ESG antes y después del shock de 2022; (ii) incorporar reequilibrio anual
+de las carteras ESG con series históricas de puntuaciones; (iii) realizar doble clasificación
+por tamaño y ESG replicando estrictamente la metodología Fama-French; (iv) comparar
+resultados entre proveedores ESG para evaluar la sensibilidad de la prima a la fuente de datos;
+y (v) descomponer el factor GMB en sus tres pilares constitutivos (E, S y G por separado).
 
 % ─── Bibliografía ────────────────────────────────────────────────────────────
 \newpage
 \printbibliography[title={Referencias Bibliográficas}]
 
-% ─── Apéndices ───────────────────────────────────────────────────────────────
+% ─── Apéndice ────────────────────────────────────────────────────────────────
 \appendix
 
-\section{Detalle de la construcción de carteras}
-\label{app:carteras}
+\section{Datos de series temporales de los factores (extracto)}
+\label{app:series}
 
-[\textit{Describir con detalle el proceso de construcción de las carteras.}]
+El Cuadro~\ref{tab:series} presenta un extracto representativo de las series mensuales
+de los cuatro factores empleados en el análisis.
 
-\section{Resultados adicionales de robustez}
-\label{app:robustez}
-
-[\textit{Tablas y figuras adicionales.}]
+\begin{table}[H]
+  \centering
+  \caption{Series temporales de factores (selección de meses, valores en \%)}
+  \label{tab:series}
+  \small
+  \begin{tabular}{lrrrrrr}
+    \toprule
+    Fecha & MKT & SMB & HML & $R_f$ & GMB \\
+    \midrule
+    ene-2021  & $-$    & $-$    & $-$    & 0{,}00 & $-$     \\
+    feb-2021  & +2{,}60 & +0{,}87 & +5{,}73 & 0{,}00 & +1{,}02 \\
+    mar-2021  & +3{,}18 & $-$1{,}97 & +3{,}46 & 0{,}00 & +1{,}09 \\
+    jun-2022  & $-$10{,}32 & $-$1{,}05 & $-$2{,}46 & 0{,}06 & $-$0{,}77 \\
+    ene-2022  & $-$5{,}39 & $-$3{,}22 & +12{,}09 & 0{,}00 & \textbf{+4{,}36} \\
+    dic-2022  & $-$1{,}09 & +1{,}45 & +2{,}58 & 0{,}33 & $-$0{,}43 \\
+    nov-2022  & +12{,}64 & $-$1{,}80 & $-$1{,}15 & 0{,}29 & +0{,}02 \\
+    abr-2025  & +3{,}97 & +2{,}10 & $-$0{,}77 & 0{,}35 & \textbf{$-$3{,}26} \\
+    dic-2025  & +3{,}57 & $-$0{,}43 & +3{,}24 & 0{,}34 & +0{,}94 \\
+    \bottomrule
+  \end{tabular}
+  \begin{minipage}{\linewidth}
+    \small\vspace{0.3em}
+    \textit{Nota:} Valores extremos resaltados en negrita. El máximo del factor GMB
+    ocurre en enero de 2022 (+4,36\%), coincidiendo con el inicio de las tensiones geopolíticas
+    que precedieron a la invasión de Ucrania. El mínimo ocurre en abril de 2025 (-3,26\%).
+  \end{minipage}
+\end{table}
 
 \end{document}
