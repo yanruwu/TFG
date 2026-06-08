@@ -1,42 +1,68 @@
+\babel@toc {english}{}\relax 
 \babel@toc {spanish}{}\relax 
-\contentsline {section}{\numberline {1}Introducción}{3}{section.1}%
-\contentsline {section}{\numberline {2}Marco Teórico}{4}{section.2}%
-\contentsline {subsection}{\numberline {2.1}El modelo CAPM}{4}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}El modelo de tres factores de Fama y French}{4}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}Fundamentos teóricos de la prima ESG}{5}{subsection.2.3}%
-\contentsline {paragraph}{Teoría de compensación por riesgo.}{5}{section*.2}%
-\contentsline {paragraph}{Teoría de la utilidad no pecuniaria.}{5}{section*.3}%
-\contentsline {paragraph}{Teoría de mercados eficientes.}{5}{section*.4}%
-\contentsline {subsection}{\numberline {2.4}El factor ESG tipo Fama-French}{5}{subsection.2.4}%
-\contentsline {section}{\numberline {3}Revisión de la Literatura}{6}{section.3}%
-\contentsline {subsection}{\numberline {3.1}ESG y rendimientos financieros: evidencia general}{6}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}El marco teórico de Pástor, Stambaugh y Taylor}{6}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}La frontera ESG-eficiente de Pedersen, Fitzgibbons y Pomorski}{7}{subsection.3.3}%
-\contentsline {subsection}{\numberline {3.4}La divergencia de calificaciones ESG}{7}{subsection.3.4}%
-\contentsline {subsection}{\numberline {3.5}Factores ESG en modelos multifactoriales}{7}{subsection.3.5}%
-\contentsline {section}{\numberline {4}Metodología}{8}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Clasificación ESG y construcción del factor GMB}{8}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Regresión de series temporales y estimación}{8}{subsection.4.2}%
-\contentsline {section}{\numberline {5}Datos}{9}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Muestra de empresas}{9}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}Datos de rentabilidades}{9}{subsection.5.2}%
-\contentsline {subsection}{\numberline {5.3}Puntuaciones ESG}{10}{subsection.5.3}%
-\contentsline {subsection}{\numberline {5.4}Estadísticos descriptivos}{10}{subsection.5.4}%
-\contentsline {section}{\numberline {6}Resultados}{12}{section.6}%
-\contentsline {subsection}{\numberline {6.1}La prima del factor GMB}{12}{subsection.6.1}%
-\contentsline {subsection}{\numberline {6.2}Regresión del modelo de tres factores (FF3F)}{12}{subsection.6.2}%
-\contentsline {subsection}{\numberline {6.3}Regresión del modelo de cuatro factores (FF4F-ESG)}{13}{subsection.6.3}%
-\contentsline {subsection}{\numberline {6.4}Resultados por tercil ESG}{14}{subsection.6.4}%
-\contentsline {subsection}{\numberline {6.5}Ejemplo individual: TotalEnergies (TTE.PA)}{14}{subsection.6.5}%
-\contentsline {subsection}{\numberline {6.6}Análisis sectorial}{15}{subsection.6.6}%
-\contentsline {subsection}{\numberline {6.7}Descomposición de Shapley del R² (IBEX~35)}{16}{subsection.6.7}%
-\contentsline {section}{\numberline {7}Conclusiones}{17}{section.7}%
-\contentsline {paragraph}{1. La prima del factor GMB es negativa y no significativa.}{17}{section*.15}%
-\contentsline {paragraph}{2. El factor GMB discrimina en sección transversal.}{17}{section*.16}%
-\contentsline {paragraph}{3. Mejora marginal del ajuste del modelo.}{17}{section*.17}%
-\contentsline {paragraph}{4. El shock geopolítico de defensa domina el período.}{17}{section*.18}%
-\contentsline {paragraph}{5. Alta correlación GMB-HML como advertencia metodológica.}{17}{section*.19}%
-\contentsline {paragraph}{6. Consistencia con el marco teórico de Pástor, Stambaugh y Taylor.}{18}{section*.20}%
-\contentsline {paragraph}{Limitaciones principales.}{18}{section*.21}%
-\contentsline {paragraph}{Líneas de investigación futuras.}{18}{section*.22}%
-\contentsline {section}{\numberline {A}Datos de series temporales de los factores (extracto)}{21}{appendix.Alph1}%
+\contentsline {section}{Resumen}{1}{section*.1}%
+\babel@toc {english}{}\relax 
+\contentsline {section}{Abstract}{2}{section*.2}%
+\babel@toc {spanish}{}\relax 
+\contentsline {section}{\numberline {1}Introducci\'on}{6}{section.1}%
+\contentsline {section}{\numberline {2}Marco Te\'orico}{7}{section.2}%
+\contentsline {subsection}{\numberline {2.1}La teor\'ia de carteras de Markowitz}{7}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}El modelo CAPM}{8}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Medidas de evaluaci\'on de carteras}{8}{subsection.2.3}%
+\contentsline {paragraph}{Ratio de Sharpe \blx@tocontentsinit {0}\parencite {sharpe1964}.}{8}{section*.6}%
+\contentsline {paragraph}{Ratio de Treynor.}{9}{section*.7}%
+\contentsline {paragraph}{Alfa de Jensen \blx@tocontentsinit {0}\parencite {jensen1968}.}{9}{section*.8}%
+\contentsline {subsection}{\numberline {2.4}El modelo de tres factores de Fama y French}{9}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}La Teor\'ia de Valoraci\'on por Arbitraje (APT)}{10}{subsection.2.5}%
+\contentsline {subsection}{\numberline {2.6}Fundamentos te\'oricos de la prima ESG: revisi\'on de la literatura}{10}{subsection.2.6}%
+\contentsline {paragraph}{Teor\'ia de compensaci\'on por riesgo.}{10}{section*.9}%
+\contentsline {paragraph}{Teor\'ia de la utilidad no pecuniaria (\textit {non-pecuniary utility}).}{11}{section*.10}%
+\contentsline {paragraph}{Hip\'otesis de eficiencia de mercado.}{11}{section*.11}%
+\contentsline {subsection}{\numberline {2.7}Hip\'otesis de investigaci\'on}{11}{subsection.2.7}%
+\contentsline {paragraph}{Hip\'otesis 1 (H1): La prima del factor GMB es significativamente distinta de cero.}{11}{section*.12}%
+\contentsline {paragraph}{Hip\'otesis 2 (H2): El modelo FF4F-ESG explica m\'as variaci\'on en los rendimientos que el modelo FF3F.}{12}{section*.13}%
+\contentsline {paragraph}{Hip\'otesis 3 (H3): La carga media del factor ESG es positiva en secci\'on transversal.}{12}{section*.14}%
+\contentsline {paragraph}{Hip\'otesis 4 (H4): La contribuci\'on del factor GMB al poder explicativo del modelo es econ\'omicamente no trivial para las empresas espa\~nolas del IBEX~35.}{12}{section*.15}%
+\contentsline {section}{\numberline {3}Datos y Metodolog\'ia}{12}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Universo de inversi\'on y selecci\'on muestral}{12}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Fuentes de datos}{13}{subsection.3.2}%
+\contentsline {paragraph}{Rentabilidades individuales.}{13}{section*.18}%
+\contentsline {paragraph}{Factores Fama-French.}{14}{section*.19}%
+\contentsline {paragraph}{Puntuaciones ESG.}{14}{section*.20}%
+\contentsline {subsection}{\numberline {3.3}Clasificaci\'on ESG y construcci\'on del factor GMB}{14}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}El modelo de cuatro factores FF4F-ESG}{15}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}Estimaci\'on y errores est\'andar HAC}{15}{subsection.3.5}%
+\contentsline {subsection}{\numberline {3.6}Descomposici\'on de Shapley del $R^2$}{15}{subsection.3.6}%
+\contentsline {section}{\numberline {4}Resultados}{16}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Estad\'isticos descriptivos del factor GMB}{16}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Estad\'isticos de las carteras de tercil ESG}{16}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Rentabilidad acumulada del factor GMB}{16}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Matriz de correlaciones entre factores}{17}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}La prima del factor GMB}{18}{subsection.4.5}%
+\contentsline {subsection}{\numberline {4.6}Comparaci\'on modelos FF3F y FF4F-ESG}{18}{subsection.4.6}%
+\contentsline {subsection}{\numberline {4.7}Carga factorial ESG por tercil}{19}{subsection.4.7}%
+\contentsline {subsection}{\numberline {4.8}Significatividad individual del coeficiente $\hat {e}$}{19}{subsection.4.8}%
+\contentsline {subsection}{\numberline {4.9}An\'alisis sectorial de la carga ESG}{20}{subsection.4.9}%
+\contentsline {subsection}{\numberline {4.10}Descomposici\'on de Shapley del $R^2$ (IBEX~35)}{21}{subsection.4.10}%
+\contentsline {section}{\numberline {5}Discusi\'on}{21}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Contraste de hip\'otesis}{21}{subsection.5.1}%
+\contentsline {paragraph}{H1: Prima del factor GMB.}{21}{section*.30}%
+\contentsline {paragraph}{H2: Mejora del ajuste del modelo.}{22}{section*.31}%
+\contentsline {paragraph}{H3: Carga ESG positiva en secci\'on transversal.}{22}{section*.32}%
+\contentsline {paragraph}{H4: Contribuci\'on Shapley no trivial para IBEX~35.}{22}{section*.33}%
+\contentsline {subsection}{\numberline {5.2}Contexto geopolítico y sesgo del período}{22}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Correlaci\'on GMB-HML y ortogonalidad del factor}{23}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}Limitaciones metodol\'ogicas}{23}{subsection.5.4}%
+\contentsline {section}{\numberline {6}Conclusiones}{23}{section.6}%
+\contentsline {paragraph}{1. La prima del factor GMB es negativa y no significativa.}{24}{section*.34}%
+\contentsline {paragraph}{2. El factor GMB discrimina en secci\'on transversal.}{24}{section*.35}%
+\contentsline {paragraph}{3. Mejora marginal del ajuste del modelo.}{24}{section*.36}%
+\contentsline {paragraph}{4. El shock geopo\'itico domina el per\'iodo.}{24}{section*.37}%
+\contentsline {paragraph}{5. Contribuci\'on Shapley econ\'omicamente significativa para el IBEX~35.}{24}{section*.38}%
+\contentsline {paragraph}{6. Coherencia con el marco PST.}{24}{section*.39}%
+\contentsline {paragraph}{L\'ineas de investigaci\'on futuras.}{25}{section*.40}%
+\contentsline {section}{\numberline {A}Extracto de series temporales de los factores}{29}{appendix.A}%
+\contentsline {section}{\numberline {B}Estimaci\'on individual: TotalEnergies SE (TTE.PA)}{29}{appendix.B}%
+\contentsline {section}{\numberline {C}Nota metodol\'ogica: errores est\'andar HAC y descomposici\'on de Shapley}{30}{appendix.C}%
+\contentsline {paragraph}{Correcci\'on de Newey-West.}{30}{section*.44}%
+\contentsline {paragraph}{Descomposici\'on de Shapley del $R^2$.}{30}{section*.45}%

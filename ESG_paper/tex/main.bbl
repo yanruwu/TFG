@@ -329,7 +329,6 @@
       \field{title}{Efficient Capital Markets: A Review of Theory and Empirical Work}
       \field{volume}{25}
       \field{year}{1970}
-      \true{nocite}
       \field{pages}{383\bibrangedash 417}
       \range{pages}{35}
       \verb{doi}
@@ -370,7 +369,6 @@
       \field{title}{The Cross-Section of Expected Stock Returns}
       \field{volume}{47}
       \field{year}{1992}
-      \true{nocite}
       \field{pages}{427\bibrangedash 465}
       \range{pages}{39}
       \verb{doi}
@@ -491,12 +489,42 @@
       \field{title}{A Five-Factor Asset Pricing Model}
       \field{volume}{116}
       \field{year}{2015}
-      \true{nocite}
       \field{pages}{1\bibrangedash 22}
       \range{pages}{22}
       \verb{doi}
       \verb 10.1016/j.jfineco.2014.10.010
       \endverb
+    \endentry
+    \entry{freeman1984}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=41cb28e3d0bec15902e9065e4b5a3865}{%
+           family={Freeman},
+           familyi={F\bibinitperiod},
+           given={R.\bibnamedelimi Edward},
+           giveni={R\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Boston, MA}%
+      }
+      \list{publisher}{1}{%
+        {Pitman}%
+      }
+      \strng{namehash}{41cb28e3d0bec15902e9065e4b5a3865}
+      \strng{fullhash}{41cb28e3d0bec15902e9065e4b5a3865}
+      \strng{bibnamehash}{41cb28e3d0bec15902e9065e4b5a3865}
+      \strng{authorbibnamehash}{41cb28e3d0bec15902e9065e4b5a3865}
+      \strng{authornamehash}{41cb28e3d0bec15902e9065e4b5a3865}
+      \strng{authorfullhash}{41cb28e3d0bec15902e9065e4b5a3865}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Strategic Management: A Stakeholder Approach}
+      \field{year}{1984}
     \endentry
     \entry{friede2015}{article}{}
       \name{author}{3}{}{%
@@ -618,6 +646,69 @@
       \endverb
       \verb{url}
       \verb https://www.gsi-alliance.org/wp-content/uploads/2021/08/GSIR-20201.pdf
+      \endverb
+    \endentry
+    \entry{gorgen2020}{report}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=6d37fb372679832c208d522637d9aeb6}{%
+           family={Görgen},
+           familyi={G\bibinitperiod},
+           given={Maximilian},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2c6432e4c0dd33e0f40d9f5d27cb27d2}{%
+           family={Jacob},
+           familyi={J\bibinitperiod},
+           given={Andrea},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fea909f088ec8cda725edef0b541de33}{%
+           family={Nerlinger},
+           familyi={N\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=18e11d67ea591859d22abdfca30de3aa}{%
+           family={Riordan},
+           familyi={R\bibinitperiod},
+           given={Ryan},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e3aa8843429c58711310a7c3382d7c08}{%
+           family={Rohleder},
+           familyi={R\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=40f556141fba6e238b72669db47a7c6d}{%
+           family={Wilkens},
+           familyi={W\bibinitperiod},
+           given={Marco},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {University of Augsburg}%
+      }
+      \strng{namehash}{900e6078cf20f494157bfa67fe49419c}
+      \strng{fullhash}{38ade3ce6e9bb58e563f2442b3691f0e}
+      \strng{bibnamehash}{38ade3ce6e9bb58e563f2442b3691f0e}
+      \strng{authorbibnamehash}{38ade3ce6e9bb58e563f2442b3691f0e}
+      \strng{authornamehash}{900e6078cf20f494157bfa67fe49419c}
+      \strng{authorfullhash}{38ade3ce6e9bb58e563f2442b3691f0e}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Available at SSRN 2930897}
+      \field{title}{Carbon Risk}
+      \field{type}{Working Paper}
+      \field{year}{2020}
+      \verb{doi}
+      \verb 10.2139/ssrn.2930897
       \endverb
     \endentry
     \entry{hong2009}{article}{}
@@ -914,6 +1005,72 @@
       \verb 10.3905/joi.2016.25.2.113
       \endverb
     \endentry
+    \entry{neweywest1987}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=058d74ae5e89fbd5a49ebdbe97b4c922}{%
+           family={Newey},
+           familyi={N\bibinitperiod},
+           given={Whitney\bibnamedelima K.},
+           giveni={W\bibinitperiod\bibinitdelim K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c9458dd7fe490cece576ba5c37b500fb}{%
+           family={West},
+           familyi={W\bibinitperiod},
+           given={Kenneth\bibnamedelima D.},
+           giveni={K\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{d3fa486ef38e9026d7e9a49009f51077}
+      \strng{fullhash}{d3fa486ef38e9026d7e9a49009f51077}
+      \strng{bibnamehash}{d3fa486ef38e9026d7e9a49009f51077}
+      \strng{authorbibnamehash}{d3fa486ef38e9026d7e9a49009f51077}
+      \strng{authornamehash}{d3fa486ef38e9026d7e9a49009f51077}
+      \strng{authorfullhash}{d3fa486ef38e9026d7e9a49009f51077}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Econometrica}
+      \field{number}{3}
+      \field{title}{A Simple, Positive Semi-Definite, Heteroskedasticity and Autocorrelation Consistent Covariance Matrix}
+      \field{volume}{55}
+      \field{year}{1987}
+      \field{pages}{703\bibrangedash 708}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.2307/1913610
+      \endverb
+    \endentry
+    \entry{sfdr2019}{misc}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=27d02fe93caf215fca87ad41af654eb5}{%
+           family={{Parlamento Europeo}},
+           familyi={P\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=9fbe7cb6b5fc01dda7aedd3628d268c5}{%
+           family={{Consejo de la Unión Europea}},
+           familyi={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{d45113a9042b5e03b4864d7e8401607d}
+      \strng{fullhash}{d45113a9042b5e03b4864d7e8401607d}
+      \strng{bibnamehash}{d45113a9042b5e03b4864d7e8401607d}
+      \strng{authorbibnamehash}{d45113a9042b5e03b4864d7e8401607d}
+      \strng{authornamehash}{d45113a9042b5e03b4864d7e8401607d}
+      \strng{authorfullhash}{d45113a9042b5e03b4864d7e8401607d}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Diario Oficial de la Unión Europea, L~317, pp.\ 1--16}
+      \field{note}{En aplicación desde el 10 de marzo de 2021}
+      \field{title}{Reglamento ({UE}) 2019/2088 sobre la divulgación de información relativa a la sostenibilidad en el sector de los servicios financieros}
+      \field{year}{2019}
+    \endentry
     \entry{pastor2021}{article}{}
       \name{author}{3}{}{%
         {{un=0,uniquepart=base,hash=1be825d7175b7af626c78cd8d18cb165}{%
@@ -1090,11 +1247,43 @@
       \field{title}{Persuasive Evidence of Market Inefficiency}
       \field{volume}{11}
       \field{year}{1985}
-      \true{nocite}
       \field{pages}{9\bibrangedash 16}
       \range{pages}{8}
       \verb{doi}
       \verb 10.3905/jpm.1985.409007
+      \endverb
+    \endentry
+    \entry{ross1976}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=98b2227c5a8dba76158ffb9a20138b89}{%
+           family={Ross},
+           familyi={R\bibinitperiod},
+           given={Stephen\bibnamedelima A.},
+           giveni={S\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{98b2227c5a8dba76158ffb9a20138b89}
+      \strng{fullhash}{98b2227c5a8dba76158ffb9a20138b89}
+      \strng{bibnamehash}{98b2227c5a8dba76158ffb9a20138b89}
+      \strng{authorbibnamehash}{98b2227c5a8dba76158ffb9a20138b89}
+      \strng{authornamehash}{98b2227c5a8dba76158ffb9a20138b89}
+      \strng{authorfullhash}{98b2227c5a8dba76158ffb9a20138b89}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Economic Theory}
+      \field{number}{3}
+      \field{title}{The Arbitrage Theory of Capital Asset Pricing}
+      \field{volume}{13}
+      \field{year}{1976}
+      \field{pages}{341\bibrangedash 360}
+      \range{pages}{20}
+      \verb{doi}
+      \verb 10.1016/0022-0531(76)90046-6
       \endverb
     \endentry
     \entry{sharpe1964}{article}{}
@@ -1442,7 +1631,6 @@
       \field{title}{Efficient Capital Markets: A Review of Theory and Empirical Work}
       \field{volume}{25}
       \field{year}{1970}
-      \true{nocite}
       \field{pages}{383\bibrangedash 417}
       \range{pages}{35}
       \verb{doi}
@@ -1483,7 +1671,6 @@
       \field{title}{The Cross-Section of Expected Stock Returns}
       \field{volume}{47}
       \field{year}{1992}
-      \true{nocite}
       \field{pages}{427\bibrangedash 465}
       \range{pages}{39}
       \verb{doi}
@@ -1604,12 +1791,42 @@
       \field{title}{A Five-Factor Asset Pricing Model}
       \field{volume}{116}
       \field{year}{2015}
-      \true{nocite}
       \field{pages}{1\bibrangedash 22}
       \range{pages}{22}
       \verb{doi}
       \verb 10.1016/j.jfineco.2014.10.010
       \endverb
+    \endentry
+    \entry{freeman1984}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=41cb28e3d0bec15902e9065e4b5a3865}{%
+           family={Freeman},
+           familyi={F\bibinitperiod},
+           given={R.\bibnamedelimi Edward},
+           giveni={R\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Boston, MA}%
+      }
+      \list{publisher}{1}{%
+        {Pitman}%
+      }
+      \strng{namehash}{41cb28e3d0bec15902e9065e4b5a3865}
+      \strng{fullhash}{41cb28e3d0bec15902e9065e4b5a3865}
+      \strng{bibnamehash}{41cb28e3d0bec15902e9065e4b5a3865}
+      \strng{authorbibnamehash}{41cb28e3d0bec15902e9065e4b5a3865}
+      \strng{authornamehash}{41cb28e3d0bec15902e9065e4b5a3865}
+      \strng{authorfullhash}{41cb28e3d0bec15902e9065e4b5a3865}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Strategic Management: A Stakeholder Approach}
+      \field{year}{1984}
     \endentry
     \entry{friede2015}{article}{}
       \name{author}{3}{}{%
@@ -1731,6 +1948,69 @@
       \endverb
       \verb{url}
       \verb https://www.gsi-alliance.org/wp-content/uploads/2021/08/GSIR-20201.pdf
+      \endverb
+    \endentry
+    \entry{gorgen2020}{report}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=6d37fb372679832c208d522637d9aeb6}{%
+           family={Görgen},
+           familyi={G\bibinitperiod},
+           given={Maximilian},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2c6432e4c0dd33e0f40d9f5d27cb27d2}{%
+           family={Jacob},
+           familyi={J\bibinitperiod},
+           given={Andrea},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fea909f088ec8cda725edef0b541de33}{%
+           family={Nerlinger},
+           familyi={N\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=18e11d67ea591859d22abdfca30de3aa}{%
+           family={Riordan},
+           familyi={R\bibinitperiod},
+           given={Ryan},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e3aa8843429c58711310a7c3382d7c08}{%
+           family={Rohleder},
+           familyi={R\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=40f556141fba6e238b72669db47a7c6d}{%
+           family={Wilkens},
+           familyi={W\bibinitperiod},
+           given={Marco},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {University of Augsburg}%
+      }
+      \strng{namehash}{900e6078cf20f494157bfa67fe49419c}
+      \strng{fullhash}{38ade3ce6e9bb58e563f2442b3691f0e}
+      \strng{bibnamehash}{38ade3ce6e9bb58e563f2442b3691f0e}
+      \strng{authorbibnamehash}{38ade3ce6e9bb58e563f2442b3691f0e}
+      \strng{authornamehash}{900e6078cf20f494157bfa67fe49419c}
+      \strng{authorfullhash}{38ade3ce6e9bb58e563f2442b3691f0e}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Available at SSRN 2930897}
+      \field{title}{Carbon Risk}
+      \field{type}{Working Paper}
+      \field{year}{2020}
+      \verb{doi}
+      \verb 10.2139/ssrn.2930897
       \endverb
     \endentry
     \entry{hong2009}{article}{}
@@ -2027,6 +2307,72 @@
       \verb 10.3905/joi.2016.25.2.113
       \endverb
     \endentry
+    \entry{neweywest1987}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=058d74ae5e89fbd5a49ebdbe97b4c922}{%
+           family={Newey},
+           familyi={N\bibinitperiod},
+           given={Whitney\bibnamedelima K.},
+           giveni={W\bibinitperiod\bibinitdelim K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c9458dd7fe490cece576ba5c37b500fb}{%
+           family={West},
+           familyi={W\bibinitperiod},
+           given={Kenneth\bibnamedelima D.},
+           giveni={K\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{d3fa486ef38e9026d7e9a49009f51077}
+      \strng{fullhash}{d3fa486ef38e9026d7e9a49009f51077}
+      \strng{bibnamehash}{d3fa486ef38e9026d7e9a49009f51077}
+      \strng{authorbibnamehash}{d3fa486ef38e9026d7e9a49009f51077}
+      \strng{authornamehash}{d3fa486ef38e9026d7e9a49009f51077}
+      \strng{authorfullhash}{d3fa486ef38e9026d7e9a49009f51077}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Econometrica}
+      \field{number}{3}
+      \field{title}{A Simple, Positive Semi-Definite, Heteroskedasticity and Autocorrelation Consistent Covariance Matrix}
+      \field{volume}{55}
+      \field{year}{1987}
+      \field{pages}{703\bibrangedash 708}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.2307/1913610
+      \endverb
+    \endentry
+    \entry{sfdr2019}{misc}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=27d02fe93caf215fca87ad41af654eb5}{%
+           family={{Parlamento Europeo}},
+           familyi={P\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=9fbe7cb6b5fc01dda7aedd3628d268c5}{%
+           family={{Consejo de la Unión Europea}},
+           familyi={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{d45113a9042b5e03b4864d7e8401607d}
+      \strng{fullhash}{d45113a9042b5e03b4864d7e8401607d}
+      \strng{bibnamehash}{d45113a9042b5e03b4864d7e8401607d}
+      \strng{authorbibnamehash}{d45113a9042b5e03b4864d7e8401607d}
+      \strng{authornamehash}{d45113a9042b5e03b4864d7e8401607d}
+      \strng{authorfullhash}{d45113a9042b5e03b4864d7e8401607d}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Diario Oficial de la Unión Europea, L~317, pp.\ 1--16}
+      \field{note}{En aplicación desde el 10 de marzo de 2021}
+      \field{title}{Reglamento ({UE}) 2019/2088 sobre la divulgación de información relativa a la sostenibilidad en el sector de los servicios financieros}
+      \field{year}{2019}
+    \endentry
     \entry{pastor2021}{article}{}
       \name{author}{3}{}{%
         {{un=0,uniquepart=base,hash=1be825d7175b7af626c78cd8d18cb165}{%
@@ -2203,11 +2549,43 @@
       \field{title}{Persuasive Evidence of Market Inefficiency}
       \field{volume}{11}
       \field{year}{1985}
-      \true{nocite}
       \field{pages}{9\bibrangedash 16}
       \range{pages}{8}
       \verb{doi}
       \verb 10.3905/jpm.1985.409007
+      \endverb
+    \endentry
+    \entry{ross1976}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=98b2227c5a8dba76158ffb9a20138b89}{%
+           family={Ross},
+           familyi={R\bibinitperiod},
+           given={Stephen\bibnamedelima A.},
+           giveni={S\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{98b2227c5a8dba76158ffb9a20138b89}
+      \strng{fullhash}{98b2227c5a8dba76158ffb9a20138b89}
+      \strng{bibnamehash}{98b2227c5a8dba76158ffb9a20138b89}
+      \strng{authorbibnamehash}{98b2227c5a8dba76158ffb9a20138b89}
+      \strng{authornamehash}{98b2227c5a8dba76158ffb9a20138b89}
+      \strng{authorfullhash}{98b2227c5a8dba76158ffb9a20138b89}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Economic Theory}
+      \field{number}{3}
+      \field{title}{The Arbitrage Theory of Capital Asset Pricing}
+      \field{volume}{13}
+      \field{year}{1976}
+      \field{pages}{341\bibrangedash 360}
+      \range{pages}{20}
+      \verb{doi}
+      \verb 10.1016/0022-0531(76)90046-6
       \endverb
     \endentry
     \entry{sharpe1964}{article}{}
